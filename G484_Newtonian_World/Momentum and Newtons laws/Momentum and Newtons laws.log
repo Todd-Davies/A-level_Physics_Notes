@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.12.8)  9 DEC 2012 17:41
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2012.12.8)  9 DEC 2012 19:49
 entering extended mode
 **Momentum*and*Newtons*laws.tex
 
-("C:\Users\Todd\Dropbox\Homework\Upper sixth work\Physics\Momentum and Newtons 
-laws\Momentum and Newtons laws.tex"
+("C:\Users\Todd\Dropbox\Homework\Upper sixth work\Physics\Notes\G484_Newtonian_
+World\Momentum and Newtons laws\Momentum and Newtons laws.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -86,8 +86,8 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen106
 \Gin@req@width=\dimen107
 )
-("C:\Users\Todd\Dropbox\Homework\Upper sixth work\Physics\Momentum and Newtons 
-laws\Momentum and Newtons laws.aux")
+("C:\Users\Todd\Dropbox\Homework\Upper sixth work\Physics\Notes\G484_Newtonian_
+World\Momentum and Newtons laws\Momentum and Newtons laws.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
@@ -100,7 +100,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
- (C:\MiKTeX\tex\context\base\supp-pdf.mkii
+
+(C:\MiKTeX\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count89
 \scratchdimen=\dimen108
@@ -145,27 +146,26 @@ File: graph.png Graphic file (type png)
  <use graph.png>
 Package pdftex.def Info: graph.png used on input line 76.
 (pdftex.def)             Requested size: 150.56212pt x 92.59569pt.
- [2 <C:/Users/Todd/Dropbox/Homework/Upper sixth work/Physics/Momentum and Newto
-ns laws/graph.png>]
-[3] [4]
-("C:\Users\Todd\Dropbox\Homework\Upper sixth work\Physics\Momentum and Newtons 
-laws\Momentum and Newtons laws.aux") ) 
+ [2 <C:/Users/Todd/Dropbox/Homework/Upper sixth work/Physics/Notes/G484_Newtoni
+an_World/Momentum and Newtons laws/graph.png>] [3] [4]
+("C:\Users\Todd\Dropbox\Homework\Upper sixth work\Physics\Notes\G484_Newtonian_
+World\Momentum and Newtons laws\Momentum and Newtons laws.aux") ) 
 Here is how much of TeX's memory you used:
  1364 strings out of 494045
- 17195 string characters out of 3155644
+ 17384 string characters out of 3155644
  70793 words of memory out of 3000000
  4684 multiletter control sequences out of 15000+200000
  8347 words of font info for 30 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  27i,11n,43p,267b,269s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmbx10.pfb><C:/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmmi10.pfb><C:/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmr10.pfb><C:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/MiKTeX/font
-s/type1/public/amsfonts/cm/cmr17.pfb><C:/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmr7.pfb><C:/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmsy7.pfb><C:/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-ti10.pfb>
+<C:/MiKTeX/fon
+ts/type1/public/amsfonts/cm/cmbx10.pfb><C:/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmbx12.pfb><C:/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmr10.pfb><C:/MiKTeX/fonts/type1/public/amsfonts/c
+m/cmr12.pfb><C:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/MiKTeX/font
+s/type1/public/amsfonts/cm/cmr7.pfb><C:/MiKTeX/fonts/type1/public/amsfonts/cm/c
+msy10.pfb><C:/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmti10.pfb>
 Output written on "Momentum and Newtons laws.pdf" (4 pages, 133750 bytes).
 PDF statistics:
  57 PDF objects out of 1000 (max. 8388607)
