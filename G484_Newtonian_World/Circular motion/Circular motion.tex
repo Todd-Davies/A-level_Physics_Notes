@@ -1,0 +1,141 @@
+\documentclass{article}
+
+\usepackage[normalem]{ulem}
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+
+\title{Circular motion}
+\author{Todd Davies}
+\date{\today}
+
+\begin{document}
+
+\rhead{Circular motion}
+\lhead{\today}
+
+\maketitle
+
+\section*{What is circular motion?}
+\thispagestyle{empty}
+Circular motion is a movement of an object along the circumference of a circle or rotation along a circular path. Some examples of circular motion include:
+\begin{itemize}
+	\item Wheels of a car.
+	\item Orbit of planets around the Sun.
+	\item The hands of a clock.
+\end{itemize}
+
+\section*{Equations to remember}
+\label{sec:Equations To Remember}
+The equations in this topic aren't very hard to remember and there isn't many of them. However, the concepts required to understand them are sometimes more difficult to grasp.
+
+\begin{itemize}
+	\item To convert between radians and degrees, use the following:
+	\[
+		radians = \frac{2\pi}{360} \times degrees
+	\]
+	\item The time taken for an object to go around a circle once is called the time period. It's relation to the frequency of the motion is defined by:
+	\[
+		f = \frac{1}{T}
+	\]
+	\item The centripetal force acting on an object of a given mass and tangential velocity moving in a circular motion with a given radius can be found using the equation:
+	\[
+		F = \frac{mv^2}{r}
+	\]
+	\item The centripetal acceleration of an object with a given tangential velocity and moving in a circular motion with a given radius can be calculated by using:
+	\[
+		a = \frac{v^2}{r}
+	\]
+	\textit{N.b. This can also be used to find the force of gravity on an object (since you can find the acceleration due to gravity).}
+\end{itemize}
+
+The quantities and their respective units are shown in this table:
+
+\begin{center}
+	\begin{tabular}{|l|l|l|}
+		\hline
+			Quantity & Abbreviation & Unit \\ \hline
+			Time period & $T$ & Second ($s$) \\ \hline
+			Frequency & $f$ & Hertz ($Hz$) \\ \hline
+			Force & $F$ & Newton ($N$) \\ \hline
+			Mass & $m$ & Kilogram ($kg$) \\ \hline
+			Radius & $r$ & Meter ($m$) \\ \hline
+			Acceleration & $a$ & Meters per second squared ($ms^{-2}$) \\ \hline
+			Tangential velocity & $v$ & Meters per second ($ms^{-1}$) \\ \hline
+	\end{tabular}
+\end{center}
+
+
+\section*{Points to remember}
+
+\begin{itemize}
+	\item Objects moving in a circle aren't in equilibrium. They need an external force to act on them to keep them moving in a circle. (Think Newton's first law - an object remains in equilibrium (i.e. moving at a constant speed in a straight line) unless acted upon by another force).
+	\item The centripetal force is an imaginary force we use to describe all the forces that add up together to make an object move in a circle. It's \textbf{not} an actual force.
+	\item The centripetal force always acts towards the centre of the circle, and since the velocity of the object is a tangent on the circular path of the object, the centripetal force is also perpendicular to the velocity of the object.
+	\item Objects travelling in a circular motion may (not always) have a steady speed, but their velocity is constantly changing. This is because velocity is a vector quantity - it has a magnitude and a direction while speed is a scalar quantity, having only a magnitude.
+	\item The centripetal force has both a horizontal and vertical component. You can use this to explain situations where objects 'defy' gravity. For example, if you whirl a conker around your head, the vertical component of the tension in the string is equal to the weight of the conker.
+\end{itemize}
+
+
+\section*{Questions to practice}
+\textbf{Question 1}\\
+Calculate the magnitude of the centripetal force that keeps the Earth in orbit around the Sun.
+Where:
+\begin{center}
+	\begin{tabular}{ l l }
+		Mass of the Earth & $6.0\times10^{24}kg$ \\
+		Speed of the Earth in orbit & $30000ms^{-1}$ \\
+		Radius of the orbit of the Earth around the Sun & $1.5\times10^{11}m$
+	\end{tabular}
+\end{center}
+\textbf{Answer}\\
+We can use the centripetal force equation to find the force like so:
+\[
+	F = \frac{6.0\times10^{24} \times 30000^2}{1.5\times10^{11}}
+\]
+\[
+	F = \uline{3.6 \times 10^{22}N}
+\]
+\\[3ex]
+\noindent
+\textbf{Question 2}\\
+What provides the centripetal force that keeps the Earth in orbit?
+\\[3ex]
+\noindent
+\textbf{Answer} \\
+The gravity of the Sun provides the centripetal force keeping Earth orbiting it.
+\\[3ex]
+\noindent
+\textbf{Question 3}\\
+If you were to swing a bucket of water in vertical circle with a radius of 1m what is the minimum time the bucket could take to complete the circle without spilling water?
+\\[3ex]
+\noindent
+\textbf{Answer} \\
+First, we must find the minimum velocity that the bucket can travel without having water fall out, then we can find how long it'll take for the bucket to travel the circumference of the circle at this speed.
+\\[3ex]
+\noindent
+We can use $F = \frac{mv^2}{r}$ along with$F = ma$ to find the minimum velocity that we can have the bucket travel at without spillage. Combining the two equations gives us:
+\[
+	\frac{mv^2}{r} = ma
+\]
+The masses cancel out and we can sub in the the value for gravity as acceleration ($9.8ms^{-2}$) and the radius ($1ms^{-1}$) so $\frac{v^2}{1} = 9.8$.
+\\[3ex]
+\noindent
+Therefore 
+\[
+	v = 3.13ms^{-1}
+\]
+Now we have to find the time it takes for the the bucket to travel around the circumference of the circle, so we must first find it's circumference: $radius \times 2\pi$ Therefore $radius = 2\pi$
+\\[3ex]
+\noindent
+To find the minimum time, we must divide the circumference by the velocity: 
+	\[
+		\frac{2\pi}{3.13} = \uline{2.01s}
+	\]
+\textbf{Question 4}\\
+Explain why an aeroplane will lose altitude when banking unless the pilot increases the throttle.\\
+\\[3ex]
+\noindent
+\textbf{Answer}
+When the aeroplane is banking, the upwards lift = $\cos\theta \times$total lift. When $0 < \theta < 90$ (i.e. when the plane is banking) $cos\theta<1$ so the pilot must increase the total lift to keep the same vertical lift.
+
+\end{document}
