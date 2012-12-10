@@ -1,3 +1,0 @@
-Physics_Notes
-=============
-I have started writing my physics notes in LaTeX. I have open sourced the code for anybody to use and am using Git as my version control. If you're studying for a physics exam, then it's best to write your own notes, that's why I haven't included any compiled notes (the .pdf files). If you have the initiative to compile the notes yourself, then you can probably pass the physics exam anyway and are welcome to my notes.
