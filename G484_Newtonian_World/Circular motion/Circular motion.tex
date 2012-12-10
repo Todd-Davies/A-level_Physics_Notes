@@ -2,6 +2,7 @@
 
 \usepackage[normalem]{ulem}
 \usepackage{fancyhdr}
+\usepackage[parfill]{parskip}
 \pagestyle{fancyplain}
 
 \title{Circular motion}
@@ -46,6 +47,15 @@ The equations in this topic aren't very hard to remember and there isn't many of
 		a = \frac{v^2}{r}
 	\]
 	\textit{N.b. This can also be used to find the force of gravity on an object (since you can find the acceleration due to gravity).}
+	\item To find the speed of an object travelling around a circle:
+	\[
+		v = \frac{2 \pi r}{t}
+	\]
+	\textit{You might have noticed, this is just a slight variation of speed equals distance over time.}
+	\item The angular velocity of an object is equal to the angle rotated divided by time:
+	\[
+		\omega = \frac{ \theta }{t}
+	\]
 \end{itemize}
 
 The quantities and their respective units are shown in this table:
@@ -58,9 +68,12 @@ The quantities and their respective units are shown in this table:
 			Frequency & $f$ & Hertz ($Hz$) \\ \hline
 			Force & $F$ & Newton ($N$) \\ \hline
 			Mass & $m$ & Kilogram ($kg$) \\ \hline
-			Radius & $r$ & Meter ($m$) \\ \hline
-			Acceleration & $a$ & Meters per second squared ($ms^{-2}$) \\ \hline
-			Tangential velocity & $v$ & Meters per second ($ms^{-1}$) \\ \hline
+			Radius & $r$ & Metre ($m$) \\ \hline
+			Acceleration & $a$ & Metres per second squared ($ms^{-2}$) \\ \hline
+			Tangential velocity & $v$ & Metres per second ($ms^{-1}$) \\ \hline
+			Time & $t$ & Seconds($s$) \\ \hline
+			Angular velocity & $\omega$ & Radians per second($rad/s$) \\ \hline
+			Angle & $\theta$ & Radians($rad$) \\ \hline
 	\end{tabular}
 \end{center}
 
@@ -72,7 +85,7 @@ The quantities and their respective units are shown in this table:
 	\item The centripetal force is an imaginary force we use to describe all the forces that add up together to make an object move in a circle. It's \textbf{not} an actual force.
 	\item The centripetal force always acts towards the centre of the circle, and since the velocity of the object is a tangent on the circular path of the object, the centripetal force is also perpendicular to the velocity of the object.
 	\item Objects travelling in a circular motion may (not always) have a steady speed, but their velocity is constantly changing. This is because velocity is a vector quantity - it has a magnitude and a direction while speed is a scalar quantity, having only a magnitude.
-	\item The centripetal force has both a horizontal and vertical component. You can use this to explain situations where objects 'defy' gravity. For example, if you whirl a conker around your head, the vertical component of the tension in the string is equal to the weight of the conker.
+	\item The centripetal force (like all forces) has both a horizontal and vertical component. You can use this to explain situations where objects 'defy' gravity. For example, if you whirl a conker around your head, the vertical component of the tension in the string is equal to the weight of the conker.
 \end{itemize}
 
 
@@ -95,47 +108,86 @@ We can use the centripetal force equation to find the force like so:
 \[
 	F = \uline{3.6 \times 10^{22}N}
 \]
-\\[3ex]
-\noindent
+
 \textbf{Question 2}\\
 What provides the centripetal force that keeps the Earth in orbit?
-\\[3ex]
-\noindent
+
 \textbf{Answer} \\
 The gravity of the Sun provides the centripetal force keeping Earth orbiting it.
-\\[3ex]
-\noindent
+
 \textbf{Question 3}\\
 If you were to swing a bucket of water in vertical circle with a radius of 1m what is the minimum time the bucket could take to complete the circle without spilling water?
-\\[3ex]
-\noindent
+
 \textbf{Answer} \\
 First, we must find the minimum velocity that the bucket can travel without having water fall out, then we can find how long it'll take for the bucket to travel the circumference of the circle at this speed.
-\\[3ex]
-\noindent
+
 We can use $F = \frac{mv^2}{r}$ along with$F = ma$ to find the minimum velocity that we can have the bucket travel at without spillage. Combining the two equations gives us:
 \[
 	\frac{mv^2}{r} = ma
 \]
 The masses cancel out and we can sub in the the value for gravity as acceleration ($9.8ms^{-2}$) and the radius ($1ms^{-1}$) so $\frac{v^2}{1} = 9.8$.
-\\[3ex]
-\noindent
+
 Therefore 
 \[
 	v = 3.13ms^{-1}
 \]
 Now we have to find the time it takes for the the bucket to travel around the circumference of the circle, so we must first find it's circumference: $radius \times 2\pi$ Therefore $radius = 2\pi$
-\\[3ex]
-\noindent
+
 To find the minimum time, we must divide the circumference by the velocity: 
 	\[
 		\frac{2\pi}{3.13} = \uline{2.01s}
 	\]
 \textbf{Question 4}\\
 Explain why an aeroplane will lose altitude when banking unless the pilot increases the throttle.\\
-\\[3ex]
-\noindent
-\textbf{Answer}
+
+\textbf{Answer}\\
 When the aeroplane is banking, the upwards lift = $\cos\theta \times$total lift. When $0 < \theta < 90$ (i.e. when the plane is banking) $cos\theta<1$ so the pilot must increase the total lift to keep the same vertical lift.
 
+\textbf{Question 5}\\
+A lawnmower rotates at $3500rpm$. The blade has a radius of $0.23m$. Find the velocity and acceleration at the tip of the blade.
+
+\textbf{Answer}\\
+To solve this question we must first convert rpm into rps:
+\[
+	3500rpm = \frac{3500}{60}rps = 58.3rps
+\]
+Then we can work out the time period of the blade.
+\[
+	t = \frac{1}{f} = \frac{1}{58.3} = 0.01714...s
+\]
+Then we can sub it into the equation to find the speed of an object travelling around a circle:
+\[
+	v = \frac{2 \pi r}{t} = \frac{2 \times \pi \times 0.23}{0.01714} = \uline{84.3m/s}
+\]
+Now we can work out the acceleration:
+\[
+	a = \frac{v^2}{r} = \frac{84.3^2}{0.23} = \uline{30897ms^{-2}}
+\]
+
+\textbf{Question 6}\\
+A pendulum is swinging. It swings up to 90 degrees and back again every time. Find the tension in the string when the pendulum is at the bottom of it's swing. The length of the string is $h$.
+
+\textbf{Answer}\\
+The gravitational potential energy is equal to the kinetic energy, so we can find $v$ in terms of the length of the string (since the height of the swing is the radius of the swing (since it swings to 90 degrees)):
+\[
+	mgh = \frac{1}{2}mv^2
+\]
+\[
+	v = \sqrt{2gh}
+\]
+Now we need to find the tension.
+\[
+	F = \frac{mv^2}{r}
+\]
+Since the centripetal force at the bottom of the swing is equal to the tension minus the weight:
+\[
+	T - mg = \frac{mv^2}{h}
+\]
+Now we can sub in out value for $v$:
+\[
+	T - mg = \frac{m({\sqrt{2gh}})^2}{h} = \frac{2mgh}{h} = 2mg
+\]
+\[
+	T = \uline{3mg}
+\]
 \end{document}
