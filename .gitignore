@@ -4,6 +4,7 @@
 *.aux
 *.bbl
 *.blg
+*.docx
 *.dvi
 *.fdb_latexmk
 *.glg
@@ -22,6 +23,7 @@
 *.nav
 *.nlo
 *.out
+*.pdf
 *.pdfsync
 *.ps
 *.snm
@@ -30,5 +32,3 @@
 *.vrb
 *.xdy
 *.tdo
-*.pdf 
-*.docx
