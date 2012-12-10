@@ -41,16 +41,103 @@ We can treat most objects as a point mass when we're working with them in relati
 	\[
 		g = -\frac{GM}{r^2}
 	\]
-	\item The orbital period of a satellite can be found using the equation:
+	\item Kepler's third law of planetary motion relates the orbital period to the orbital radius in the following equation:
 	\[
-		T = \frac{2 \pi r^2}{GM}
+		T^2 \propto r^3
+	\]
+	\item The orbital speed of a planet is determined using the equation:
+	\[
+		v^2 = \frac{GM}{r}
 	\]
 \end{itemize}
+
+The quantities and their respective units are shown in this table:
+
+\begin{center}
+	\begin{tabular}{|l|l|l|}
+		\hline
+			Quantity & Abbreviation & Unit \\ \hline
+			Gravity & $g$ & Meters per second squared($ms^{-2}$) \\ \hline
+			Force & $F$ & Newton($N$) \\ \hline
+			Mass & $m$ & Kilogram($kg$) \\ \hline
+			Gravitational constant & $G$ & ($m^3kg^{-1}s^{-2}$) \\ \hline
+			Mass of the object & M & $kg$ \\
+			creating the gravitational field & & \\ \hline
+	\end{tabular}
+\end{center}
+
 
 
 \section*{Newton's law of gravitation}
 \textbf{Definition:} Any two point masses attract each other with a force that is directly proportional to the product of their masses and inversely proportional to the square of their separation.
 
 In my opinion that's a bit wordy, so my advice is to define the equations and state the terms. If the question wants lots of marks then state that it's a inverse square law too.
+
+
+\section*{Deriving Kepler's law}
+\textbf{This isn't on the syllabus, but if you're extra clever you might like to read it}
+
+Kepler's law states that: $T^2 \propto r^3$. Here is how to derive it from the following three equations:
+
+\begin{itemize}
+
+\item Newton's law of gravitation: $F = -\frac{GMm}{r^2}$
+
+\item The centripetal force equation: $F = \frac{mv^2}{r}$
+
+\item The equation for the speed of an object travelling in a circle: $v = \frac{2 \pi r}{T}$
+
+\end{itemize}
+
+
+Put Newton's law of gravitation and the centripetal force equation equal to each other:
+
+$\frac{GMm}{r^2} = \frac{mv^2}{r}$
+
+Divide both sides by $r$:
+
+$\frac{GMm}{r} = mv^2$
+
+Sub in $v = \frac{2 \pi r}{T}$ for $v$:
+
+$\frac{GMm}{r} = m(\frac{2 \pi r}{T})^2$
+
+Divide both sides by $m$:
+
+$\frac{GM}{r} = (\frac{2 \pi r}{T})^2$
+
+Root both sides:
+
+$\sqrt{\frac{GM}{r}} = \frac{2 \pi r}{T}$
+
+Flip both sides and divide by $2 \pi r$:
+
+$T = \frac{2 \pi r}{\sqrt{\frac{GM}{r}}}$
+
+Now we have Kepler's law, sort of, we it just needs simplifying:
+
+Multiply both sides by $\sqrt{\frac{GM}{r}}$:
+
+$T \times \sqrt{\frac{GM}{r}} = 2 \pi r$
+
+Square both sides:
+
+$T^2 \times \frac{GM}{r} = (2 \pi r)^2$
+
+Divide both sides by $\frac{GM}{r}$:
+
+$T^2 = \frac{(2 \pi r)^2}{\frac{GM}{r}}$
+
+Clean it up:
+
+$T^2 = \frac{(2 \pi r)^2 \times r}{GM}$
+
+Take out $r$ to get the final answer:
+
+$T^2 = \frac{(2 \pi)^2}{GM}r^3$
+
+If you take out the constant you get Kepler's law:
+
+$T^2 \propto r^3$
 
 \end{document}
