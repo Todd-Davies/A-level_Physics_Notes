@@ -3,6 +3,7 @@
 \usepackage[normalem]{ulem}
 \usepackage{fancyhdr}
 \usepackage[parfill]{parskip}
+\usepackage{amsmath}
 \pagestyle{fancyplain}
 
 \title{Gravitational fields}
@@ -11,7 +12,7 @@
 
 \begin{document}
 
-\rhead{Circular motion}
+\rhead{Gravitational fields}
 \lhead{\today}
 \setlength{\parindent}{0cm}
 
@@ -75,14 +76,7 @@ The quantities and their respective units are shown in this table:
 In my opinion that's a bit wordy, so my advice is to define the equations and state the terms. If the question wants lots of marks then state that it's a inverse square law too. The word point mass is interchangeable with the word particle (which probably doesn't mean anything unless you've done a maths mechanics).
 
 We can derive the equation of Newton's law of gravitation like so:
-\[
-	F \propto Mm
-\]
-and
-\[
-	F \propro \frac{1}{r^2}
-\]
-We can combine these two equations to give:
+Start with $F \propto Mm$ and $F \propto \frac{1}{r^2}$ and combine them to give:
 \[
 	F \propto \frac{Mm}{r^2}
 \]
@@ -93,6 +87,83 @@ If we get rid of the proportional sign by adding a constant, we end up with Newt
 \textit{N.b. the minus sign is there to show that the force is attractive.}
 
 We measure the distance $r$ between the masses from the centre of gravity of one point to the centre of gravity of another. The two bodies attract each other with equal and opposite forces (think Newton's third law).
+
+\section*{Gravitational field strength}
+The gravitational field strength of an object tells us how strong or weak the gravity produced by the object is. The gravitational field strength of an object is represented in equations by the letter $g$.
+
+The gravitational field strength of an object is \textbf{defined as}: \textit{The gravitational field strength at a point is the gravitational force exerted per units mass on a small object placed at that point.}
+
+The unit of gravitational field strength is $Nkg^{-1}$ or $ms^{-2}$. These units are interchangeable since one Newton is defined as:
+\[
+	N = kg \frac{m}{s^2}
+\] 
+If we divide this by a kilogram we get:
+\[
+	\frac{N}{kg} = \frac{m}{s^2}
+\]
+Therefore $Nkg^{-1}$ and $ms^{-2}$ are equal to each other.
+
+
+\subsection*{The relationship between gravity and distance}
+Gravity has an inverse squared relationship with distance. We can see this from the equation: $g = -\frac{GM}{r^2}$. 
+
+If this is the case then if I climb some stairs from the first floor to the second floor, then (assuming the floors are the same distance apart) gravity would have half the effect on me once I was on the second floor compared to when I was on the first floor. Yes?
+
+Of course, this isn't true in fact we can work out the \% change in gravity between the two floors. I'm going to assume that the floors are each $10m$ high.
+
+First we need to work out the force of gravity on me when I'm standing on each floor:
+
+\begin{minipage}[t]{0.5\textwidth}
+First floor:
+\[
+	G = 6.67 \times 10^{-11} \textrm{ Gravitational constant}
+\]
+\[
+	M = 6 \times 10^{24}kg \textrm{ Mass of the Earth}
+\]
+\[
+	r = 6400010m \textrm{ Radius of Earth + 10m}
+\]
+\[
+	g = \frac{GM}{r^2}
+\]
+\[
+	g = \frac{6.67 \times 10^{-11} \times 6 × 10^{24}}{6400010^2}
+\]
+\[
+	g = 9.77047728ms^{-2}
+\]
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+Second floor:
+\[
+	G = 6.67 \times 10^{-11} \textrm{ Gravitational constant}
+\]
+\[
+	M = 6 \times 10^{24}kg \textrm{ Mass of the Earth}
+\]
+\[
+	r = 6400020m \textrm{ Radius of Earth + 20m}
+\]
+\[
+	g = \frac{GM}{r^2}
+\]
+\[
+	g = \frac{6.67 \times 10^{-11} \times 6 \times 10^{24}}{6400020^2}
+\]
+\[
+	g = 9.77044675ms^{-2}
+\]
+\end{minipage}\\
+
+From these two values, we can find the percentage decrease in gravity between the two floors:
+\[
+	\textrm{Percentage decrease} = \frac{9.77044675 - 9.77047728}{9.77047728}
+\]
+\[
+	\textrm{Percentage decrease} = 0.000003 \%
+\]
+So we've proved that even though gravity has an inverse square relationship with distance, the distance you move by going up ten metres is very small compared to the radius of the Earth.
 
 \section*{Deriving Kepler's law}
 \textbf{This isn't on the syllabus, but if you're extra clever you might like to read it}
