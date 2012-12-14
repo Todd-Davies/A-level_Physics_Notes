@@ -38,6 +38,7 @@ We can treat most objects as a point mass when we're working with them in relati
 	\[
 		F = -\frac{GMm}{r^2}
 	\]
+	\textit{N.b. the minus sign is to show that the force is attractive.}
 	\item The gravitational field strength at a specified distance from a point or spherical mass is given by:
 	\[
 		g = -\frac{GM}{r^2}
@@ -107,7 +108,7 @@ Therefore $Nkg^{-1}$ and $ms^{-2}$ are equal to each other.
 \subsection*{The relationship between gravity and distance}
 Gravity has an inverse squared relationship with distance. We can see this from the equation: $g = -\frac{GM}{r^2}$. 
 
-If this is the case then if I climb some stairs from the first floor to the second floor, then (assuming the floors are the same distance apart) gravity would have half the effect on me once I was on the second floor compared to when I was on the first floor. Yes?
+If this is the case then if I climb some stairs from the first floor to the second floor, then (assuming the floors are the same distance apart) gravity would have one quarter the effect on me once I was on the second floor compared to when I was on the first floor. Yes?
 
 Of course, this isn't true in fact we can work out the \% change in gravity between the two floors. I'm going to assume that the floors are each $10m$ high.
 
@@ -164,6 +165,31 @@ From these two values, we can find the percentage decrease in gravity between th
 	\textrm{Percentage decrease} = 0.000003 \%
 \]
 So we've proved that even though gravity has an inverse square relationship with distance, the distance you move by going up ten metres is very small compared to the radius of the Earth.
+
+\section*{Orbiting under gravity}
+Gravity provides the centripetal force required to keep celestial bodies moving around each other. We can use equations relating to gravity along with equations relating to circular motion to work with orbits of satellites around planetary bodies. Since gravity provides the centripetal force in these equations, we can combine $F = \frac{mv^{2}}{r}$ with $F = \frac{GMm}{r^2}$ to get:
+\[
+	\frac{GMm}{r^2} = \frac{mv^{2}}{r}
+\]
+Which we can rearrange to give:
+\[
+	v^{2} = \frac{GM}{r}
+\]
+Now we can calculate things such as the required speed of a satellite in orbit, or the mass of the object a satellite is orbiting around.
+
+\section*{Orbital period}
+Kepler's third law of planetary motion states: \textit{The square of the period T of a planet is directly proportional to the cube of it's distance r from the Sun - $T^2 \propto r^3$}
+
+The constant in Kepler's law is $\frac{4 \pi ^2}{GM}$ which is also (due to the nature of a straight line graph) the gradient of the line we get when we plot a graph of $T^2$ against $r^3$ (using the planets in the solar system is a good example).
+
+\section*{Orbits of satellites}
+Satellites can orbit the earth in any orbit, but some are more useful than the others.
+
+If a satellite is set to orbit over the poles, then it passes around the Earth many times a day. By doing this, the satellite views a slightly different strip of earth every orbit as the Earth is rotating underneath it.
+
+A satellite can be in an elliptical orbit around Earth. This has a longer time period than a circular orbit since the satellite must travel further and farther away from the planet in every orbit.
+
+Arguably the most useful orbit is the geostationary orbit. By matching the time period of the satellite to the speed of the Earth's rotation, we can make a satellite orbit over the same spot on the Earth.
 
 \section*{Deriving Kepler's law}
 \textbf{This isn't on the syllabus, but if you're extra clever you might like to read it}
@@ -231,4 +257,68 @@ If you take out the constant you get Kepler's law:
 
 $T^2 \propto r^3$
 
+\section*{Questions to practice}
+\textbf{Question 1}\\
+Work out the radius of orbit of a geostationary satellite. ($G = 6.67 \times 10^{-11}$, $M = 6 \times 10^{24}$).
+
+\textbf{Answer}\\
+Kepler's law states that:
+\[
+	T^2 = \frac{4 \pi ^2}{GM} r^3
+\]
+So if we assume a geostationary orbit has a period of 24 hours and sub in the numbers we know:
+\[
+	(86400)^2 = \frac{4 \pi ^2}{6.67 \times 10^{-11} \times 6 \times 10^{24}} r^3
+\]
+Rearrange to find r:
+\[
+	r = \sqrt[3]{\frac{(86400)^2}{\frac{4 \pi ^2}{6.67 \times 10^{-11} \times 6 \times 10^{24}}}}
+\]
+\[
+	r = \sqrt[3]{\frac{(86400)^2 \times 6.67 \times 10^{-11} \times 6 \times 10^{24}}{4 \pi ^2}}
+\]
+\[
+	r = 4.23 \times 10^{7}m
+\]
+\textbf{Question 2}\\
+Work out the latency of a internet connection between Paris and London assuming one Geostationary satellite is used to facilitate the connection and there is no processing delay. (Speed of light = $3 \times 10^8 ms$, $G = 6.67 \times 10^{-11}$, $M = 6 \times 10^{24}$)
+
+\textbf{Answer}\\
+We already worked out the radius of an orbiting satellite in the previous question to be $4.23 \times 10^{7}m$ We just need to work out the time it takes for light to cover this distance and back again (the signal must go up and down).
+\[
+	speed = \frac{distance}{time}
+\]
+\[
+	3 \times 10^8 = \frac{4.23 \times 10^{7}}{time}
+\]
+\[
+	time = 0.141s
+\]
+\textbf{Question 3}\\
+Calculate the two distances where the gravitational field strength of the Earth is $1N/kg$. ($G = 6.67 \times 10^{-11}$, $M = 6 \times 10^{24}$)
+
+\textbf{Answer}\\
+We can use the equation:
+\[
+	g = -\frac{GM}{r^2}
+\]
+Sub in the numbers we know:
+\[
+	1 = -\frac{(6.67 \times 10^{-11}) \times (6 \times 10^{24})}{r^2}
+\]
+\[
+	r = \sqrt{\frac{(6.67 \times 10^{-11}) \times (6 \times 10^{24})}{1}}
+\]
+\[
+	r = 20004999.4m
+\]
+\[
+	r = 20,005km
+\]
+However, this is the distance away from the Earth that $g = 1N/kg$. We also need to find the distance into the Earth for this value of $g$:
+Since $g = 9.8N/kg$ when $r = 6400km$ and the relationship is directly proportional we can work out the gravitational field strength of any point inside the Earth.
+For $g = 1N/kg$ we divide $9.8$ by $1$ to get $9.8$ and then divide $6400km$ by this:
+\[
+	r = \frac{6400000}{9.8} = 653061m = 653km
+\]
 \end{document}
