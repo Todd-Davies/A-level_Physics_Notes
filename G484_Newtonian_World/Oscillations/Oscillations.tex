@@ -116,7 +116,7 @@ Here is a diagram of two identical waves out of phase by 180 degrees:
 
 \begin{tikzpicture}
 	%curve 1
-		\draw[dotted] (0.5,0) sin (1.5,1) cos (2.5,0) sin (3.5,-1) cos (4.5,0) sin (5.5,1) cos (6.5,0) sin (7.5,-1) cos (8.5,0) sin (9.5,1) cos (10.5,0) sin (11.5,-1);
+		\draw[dashed] (0.5,0) sin (1.5,1) cos (2.5,0) sin (3.5,-1) cos (4.5,0) sin (5.5,1) cos (6.5,0) sin (7.5,-1) cos (8.5,0) sin (9.5,1) cos (10.5,0) sin (11.5,-1);
 	%curve 2
 		\draw (0.5,0) sin (1.5,-1) cos (2.5,0) sin (3.5,1) cos (4.5,0) sin (5.5,-1) cos (6.5,0) sin (7.5,1) cos (8.5,0) sin (9.5,-1) cos (10.5,0) sin (11.5,1);
 	% zero crossing
@@ -132,5 +132,47 @@ Here is a diagram of two identical waves out of phase by 180 degrees:
 \end{tikzpicture}
 
 \textit{N.b. 180 degrees is equal to $\pi$ radians.}
+
+\section*{Simple harmonic motion (SHM)}
+\textbf{Definition: }\textit{A body executes simple harmonic motion if its acceleration is directly proportional to its displacement from its equilibrium position and is always directed towards the equilibrium position.}
+
+Examples of SHM include:
+\begin{itemize}
+	\item The string of a violin after it has been plucked
+	\item The pendulum of a grandfather clock
+	\item When a pure sound travels through the air, the molecules in the air vibrate with SHM
+	\item The alternating current found in the national grid makes electrons in the wire move with SHM
+\end{itemize}
+
+At A-level, only oscillations with one frequency are analysed, however SHM can also apply to objects that have a complicated motion equal to the resultant of many different waves.
+
+\subsection*{The requirements of SHM}
+The three requirements of SHM are:
+\begin{enumerate}
+	\item A mass must oscillate
+	\item There must be a position where the mass is in equilibrium
+	\item There must be a restoring force that acts to return the mass to equilibrium. This force is proportional to the displacement of the mass from the equilibrium position and is directed towards the equilibrium position.
+\end{enumerate}
+
+\subsection*{Changes displacement, velocity and acceleration in SHM}
+If you do maths mechanics, then you're in luck for this bit!
+We can find the displacement of the mass for a given time using this equation:
+\[
+	x = A\sin (2 \pi ft)
+\]
+If we differentiate this, we get:
+\[
+	\frac{dx}{dt} = v = 2 \pi f A cos(2 \pi f t)
+\]
+And if we differentiate again, we get:
+\[
+	\frac{dx^2}{d^2t} = a = - A (2 \pi f)^2 sin(2 \pi f t)
+\]
+
+However, that wasn't on the syllabus, but you \textit{do need to know} the following:
+\begin{itemize}
+	\item Velocity is highest when $x=0$ and lowest (zero) when $x=A$.
+	\item Acceleration is the inverse of the velocity (i.e. it's highest when $x=A$ and lowest when $x=0$).
+\end{itemize}
 
 \end{document}
