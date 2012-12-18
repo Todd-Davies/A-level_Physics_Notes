@@ -87,26 +87,50 @@ Oscillations have maximum acceleration at the point where their displacement is 
 The shape of a graph plotting displacement against time is going to be something like:
 
 \begin{tikzpicture}
-%curve
-\draw (0.5,0) sin (1.5,1) cos (2.5,0) sin (3.5,-1) cos (4.5,0) sin (5.5,1) cos (6.5,0) sin (7.5,-1) cos (8.5,0) sin (9.5,1) cos (10.5,0) sin (11.5,-1);
-% zero crossing
-\draw[dotted] (0.5,0) -- (11.5,0);
-%axis + labels
-\draw [<->] (0.5,1) -- (0.5,-1);
-\draw [->] (0.5,0) -- (11.5,0);
-\node at (11.7,0) {$t$};
-\node at (0.5,1.2) {$+x$};
-\node at (0.5,-1.2) {$-x$};
-\node at (0.3,0) {$0$};
-%Time period description
-\draw [<->] (1.5,1.2) -- (5.5,1.2);
-\node at (3.5,1.5) {Time period, $T$};
-%Amplitude description
-\draw [<->] (7.5,0) -- (7.5,-1);
-\draw [fill=white,ultra thick,white] (7.6,-0.3) rectangle (9.7,-0.7); %to stop line overlap
-\node at (8.7, -0.5) {Amplitude, $A$};
+	%curve
+		\draw (0.5,0) sin (1.5,1) cos (2.5,0) sin (3.5,-1) cos (4.5,0) sin (5.5,1) cos (6.5,0) sin (7.5,-1) cos (8.5,0) sin (9.5,1) cos (10.5,0) sin (11.5,-1);
+	% zero crossing
+		\draw[dotted] (0.5,0) -- (11.5,0);
+	%axis + labels
+		\draw [<->] (0.5,1) -- (0.5,-1);
+		\draw [->] (0.5,0) -- (11.5,0);
+		\node at (11.7,0) {$t$};
+		\node at (0.5,1.2) {$+x$};
+		\node at (0.5,-1.2) {$-x$};
+		\node at (0.3,0) {$0$};
+	%Time period description
+		\draw [<->] (1.5,1.2) -- (5.5,1.2);
+		\node at (3.5,1.5) {Time period, $T$};
+	%Amplitude description
+		\draw [<->] (7.5,0) -- (7.5,-1);
+		\draw [fill=white,ultra thick,white] (7.6,-0.3) rectangle (9.7,-0.7); %to stop line overlap
+		\node at (8.7, -0.5) {Amplitude, $A$};
 \end{tikzpicture}
 
 This graph can be described as \textit{sinusoidal}.
+
+\section*{Phase}
+As you should know from the G482 module, waves have a phase. The phase of a wave is the point an oscillating mass has reached in it's cycle of oscillation. Phase is measured in degrees or radians. Two waves can have a phase difference, also measured in degrees or radians.
+
+Here is a diagram of two identical waves out of phase by 180 degrees:
+
+\begin{tikzpicture}
+	%curve 1
+		\draw[dotted] (0.5,0) sin (1.5,1) cos (2.5,0) sin (3.5,-1) cos (4.5,0) sin (5.5,1) cos (6.5,0) sin (7.5,-1) cos (8.5,0) sin (9.5,1) cos (10.5,0) sin (11.5,-1);
+	%curve 2
+		\draw (0.5,0) sin (1.5,-1) cos (2.5,0) sin (3.5,1) cos (4.5,0) sin (5.5,-1) cos (6.5,0) sin (7.5,1) cos (8.5,0) sin (9.5,-1) cos (10.5,0) sin (11.5,1);
+	% zero crossing
+		\draw[dotted] (0.5,0) -- (11.5,0);
+	%axis + labels
+		\draw [<->] (0.5,1) -- (0.5,-1);
+		\draw [->] (0.5,0) -- (11.5,0);
+		\node at (11.7,0) {$t$};
+		\node[rotate=90] at (0.2,0) {displacement};
+	%Phase difference description
+		\draw [<->] (1.5,1.2) -- (3.5,1.2);
+		\node at (2.5,1.5) {$180^\circ$};
+\end{tikzpicture}
+
+\textit{N.b. 180 degrees is equal to $\pi$ radians.}
 
 \end{document}
