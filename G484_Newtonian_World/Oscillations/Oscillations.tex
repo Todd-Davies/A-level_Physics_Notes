@@ -53,6 +53,8 @@ An oscillation is defined as a '\textit{A repetitive back and forth motion}' (an
 	\]
 \end{itemize}
 
+\textit{N.b. all equations take radians, not degrees}
+
 The quantities and their respective units are shown in this table:
 
 \begin{center}
@@ -169,10 +171,182 @@ And if we differentiate again, we get:
 	\frac{dx^2}{d^2t} = a = - A (2 \pi f)^2 sin(2 \pi f t)
 \]
 
+\textit{N.b. We can sub in the equation for displacement into the equation we derived for the acceleration to get $a= -(2 \pi f)^2 x$ which is the equation on the formulae sheet.}
+
 However, that wasn't on the syllabus, but you \textit{do need to know} the following:
 \begin{itemize}
 	\item Velocity is highest when $x=0$ and lowest (zero) when $x=A$.
 	\item Acceleration is the inverse of the velocity (i.e. it's highest when $x=A$ and lowest when $x=0$).
 \end{itemize}
 
+\subsection*{Graphical representations of SHM}
+If you have a graph of either displacement, velocity or acceleration, you can draw a graph of the other two from the graph you do have. To do this, you plot gradient of the previous graph like so:
+
+\begin{center}
+	\begin{tikzpicture}
+		%curve
+			\draw (0.5,0) sin (1.5,1) cos (2.5,0) sin (3.5,-1) cos (4.5,0) sin (5.5,1) cos (6.5,0) sin (7.5,-1) cos (8.5,0) sin (9.5,1) cos (10.5,0) sin (11.5,-1);
+		%axis + labels
+			\draw [<->] (0.5,1) -- (0.5,-1);
+			\draw [->] (0.5,0) -- (11.5,0);
+			\node at (11.7,0) {$t$};
+			\node[rotate=90] at (0.2,0) {Displacement};
+	\end{tikzpicture}
+
+	\begin{tikzpicture}
+		%curve
+			\draw (0.55,1) cos (1.5,0) sin (2.5,-1) cos (3.5,0) sin (4.5,1) cos (5.5,0) sin (6.5,-1) cos (7.5,0) sin (8.5,1) cos (9.5,0) sin (10.5,-1) cos (11.5,0);
+		%axis + labels
+			\draw [<->] (0.5,1) -- (0.5,-1);
+			\draw [->] (0.5,0) -- (11.5,0);
+			\node at (11.7,0) {$t$};
+			\node[rotate=90] at (0.2,0) {Velocity};
+	\end{tikzpicture}
+
+	\begin{tikzpicture}
+		%curve
+			\draw (0.5,0) sin (1.5,-1) cos (2.5,0) sin (3.5,1) cos (4.5,0) sin (5.5,-1) cos (6.5,0) sin (7.5,1) cos (8.5,0) sin (9.5,-1) cos (10.5,0) sin (11.5,1);
+		%axis + labels
+			\draw [<->] (0.5,1) -- (0.5,-1);
+			\draw [->] (0.5,0) -- (11.5,0);
+			\node at (11.7,0) {$t$};
+			\node[rotate=90] at (0.2,0) {Acceleration};
+	\end{tikzpicture}
+\end{center}
+
+If you look, you can see that the graph of the velocity is the gradient of the displacement, and the graph of acceleration is the gradient of the velocity. 
+
+By looking at these graphs, we can also deduce that $a \propto -x$.
+
+\subsection*{Angular frequency in SHM}
+The angular frequency of an object undergoing SHM relates to the frequency and time period via these equations:
+\[
+	\omega = 2 \pi f
+\]
+\[
+	\omega = \frac{2 \pi}{T}
+\]
+\[
+	T = \frac{2 \pi}{\omega}
+\]
+This means you can work out the angular frequency of and object in SHM from a graph of displacement.
+
+\subsection*{The relationship between acceleration and displacement in SHM}
+If we were to draw a graph of acceleration on the y axis and displacement on the x axis of an object undergoing SHM, it would look like the following:
+
+\begin{center}
+	\begin{tikzpicture}
+		%line
+			\draw [-] (3,3) -- (-3,-3);
+		%axis + labels
+			\draw [<->] (4,0) -- (-4,0);
+			\draw [->] (0,-4) -- (0,4);
+			\node at (0,4.2) {$a$};
+			\node at (4.2,0) {$x$};
+		%crossing points
+			\draw [-, dotted] (3,3) -- (3, -0.5);
+			\node at (3.3,-0.3) {$+A$};
+			\draw [-, dotted] (-3,-3) -- (-3, 0.5);
+			\node at (-2.7,0.3) {$-A$};
+		%gradient
+			\draw [-, dashed] (2,2) -- (2, -2);
+			\draw [-, dashed] (-2,-2) -- (2, -2);
+			\node at (2,-2.5) {$\frac{\delta y}{\delta x} = \frac{-(2 \pi ft)^2 \textrm{\sout{$A \sin(2 \pi ft)$}}}{\textrm{\sout{$A \sin(2 \pi ft)$}}}$};
+			\node at (2.33,-3.1) {$=-(2 \pi ft)^2 = \textrm{gradient}$};
+	\end{tikzpicture}
+\end{center}
+
+Notice that the gradient is independent of the amplitude of the graph, which explains why objects in SHM keep a constant frequency even though their amplitude may decrease over time.
+
+\subsection*{Maximum speed of an oscillator}
+From the equation 
+\[
+v_{max} = (2 \pi f)A
+\]
+We can deduce that:
+\[
+	v_{max} \propto A
+\]
+However, since (as we discovered in the previous section), $A$ is independent of $f$, we also find that:
+\[
+	v_{max} \propto f
+\]
+
+\subsection*{Energy changes in SHM}
+In SHM, there is a constant change between potential (gravitational, elastic etc) energy and kinetic energy. We can draw graphs of these energies in a system:
+
+\begin{center}
+	\begin{tikzpicture}
+		%Graph 1
+			%PE
+				\draw[dashed] (1.5,2) cos (2,1) sin (2.5,0) cos (3,1) sin (3.5,2) cos (4,1) sin (4.5,0) cos (5,1) sin (5.5,2) cos (6,1) sin (6.5,0) cos (7,1) sin (7.5,2) cos (8,1) sin (8.5,0) cos (9,1) sin (9.5,2) cos (10,1) sin (10.5,0) cos (11,1) sin (11.5,2);
+			%KE
+			\draw (1.5,0) cos (2,1) sin (2.5,2) cos (3,1) sin (3.5,0) cos (4,1) sin (4.5,2) cos (5,1) sin (5.5,0) cos (6,1) sin (6.5,2) cos (7,1) sin (7.5,0) cos (8,1) sin (8.5,2) cos (9,1) sin (9.5,0) cos (10,1) sin (10.5,2) cos (11,1) sin (11.5,0);
+			%axis + labels
+				\draw [->] (1.5,0) -- (1.5,3);
+				\draw [->] (1.5,0) -- (11.5,0);
+				\node at (10.9,-0.2) {$time$};
+				\node[rotate=90] at (1.2,1.5) {Energy};
+			%total energy label
+				\draw[thin, dotted] (1.5, 2) -- (11.5, 2);
+				\node at (12.2, 2.2) {Total};
+				\node at (12.2, 1.8) {Energy};
+			%one oscillation
+				\draw[<->] (3.5, 2.2) -- (7.5, 2.2);
+				\node at (5.5, 2.4) {One oscillation};
+		%Graph 2
+			%PE
+				\draw[dashed] (3.5,-2) sin (6.5,-5) cos (9.5,-2);
+			%KE
+				\draw (3.5,-5) sin (6.5,-2) cos (9.5,-5);
+			%axis + labels
+				\draw [->] (6.5,-5) -- (6.5,-1.5);
+				\draw [<->] (3,-5) -- (10,-5);
+				\node at (6.5,-5.3) {Displacement};
+				\node at (6.5,-1.2) {Energy};
+			%amplitude
+				\draw[dotted] (3.5,-5) -- (3.5,-4.6);
+				\node at (3.5,-5.3) {$-A$};
+				\draw[dotted] (9.5,-5) -- (9.5,-4.6);
+				\node at (9.5,-5.3) {$+A$};
+			%total energy
+				\draw[dotted] (3.5,-2) -- (9.5,-2);
+				\node at (10.2, -1.8) {Total};
+				\node at (10.2, -2.2) {Energy};
+		%Labels
+			%PE label
+				\draw[dashed] (4.5, -7) -- (5.5, -7);
+				\node at (7.2, -7) {Potential energy};
+			%KE label
+				\draw (4.5, -8) -- (5.5, -8);
+				\node at (7.2, -8) {Kinetic energy};
+			%label box
+				\draw (3.5, -6.5) rectangle (9.5, -8.5);
+	\end{tikzpicture}
+\end{center}
+These graphs show that:
+\begin{itemize}
+	\item Kinetic energy is maximum when the displacement is equal to zero.
+	\item Potential energy is maximum when the displacement is equal to the amplitude of the motion.
+	\item At any point, $KE + PE = $\textit{ total energy}
+\end{itemize}
+
+\section*{Damped oscillations}
+The amplitude of a damped oscillation decreases exponentially with time. This means that is loses lots of energy at first, but takes a long time to stop completely.
+
+Damping is achieved by introducing a frictional force into a mechanical oscillating system. By adding this force, energy is constantly removed from the system, and so the amplitude and maximum speed of the oscillation decrease.
+
+\section*{Resonance}
+Resonance is a phenomena where if the frequency of the driving oscillation matches the natural frequency of the object being driven, then the amplitude of the driven object increases exponentially.
+
+For resonance to occur, the system must be capable of moving freely. We also need a driving force. The following statements apply to a system in resonance:
+\begin{itemize}
+	\item Natural frequency = driving frequency
+	\item Amplitude is maximum
+	\item Driven system absorbs the greatest possible energy from the driver
+\end{itemize}
+
+We can employ damping to reduce the effects of resonance. For example in skyscrapers, damping of the foundations of the building can save the building from collapse in the event of an earthquake.
+
+Resonance can also be useful. Microwaves make water molecules vibrate at their natural frequency and so give them kinetic energy, which heats up the food they are in.
 \end{document}
