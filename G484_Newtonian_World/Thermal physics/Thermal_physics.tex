@@ -3,6 +3,7 @@
 \usepackage[normalem]{ulem}
 \usepackage{fancyhdr}
 \usepackage[parfill]{parskip}
+\usepackage{multicol}
 \pagestyle{fancyplain}
 
 \title{Thermal physics}
@@ -15,6 +16,41 @@
 \lhead{\today}
 
 \maketitle
+
+\section*{Equations to remember}
+\begin{itemize}
+	\item To convert between kelvin and calcius, use the following:
+	\[
+		T(K) = \Theta(^\circ C) + 273
+	\]
+	\item The equation for specific heat capacity is:
+	\[
+		SHC = \frac{\textrm{\textit{energy supplied}}}{mass \times \textrm{\textit{temperature change}}}
+	\]
+	Which as a 'proper' equation is:
+	\[
+		c = \frac{E}{m \Delta \Theta}
+	\]
+	\item The equation to find the energy change when changing the temperature of a substance is:
+	\[
+		E = mc \Delta \Theta
+	\]
+\end{itemize}
+
+The quantities and their respective units are shown in this table:
+
+\begin{center}
+	\begin{tabular}{|l|l|l|}
+		\hline
+			Quantity & Abbreviation & Unit \\ \hline
+			Absolute temperature & $K$ & Kelvin ($K$) \\ \hline
+			Temperature & $^\circ C$ & Celsius ($^\circ C$) \\ \hline
+			Specific heat capacity & $c$ & $Jkg^{-1}K^{-1}$ \\ \hline
+			Energy & $E$ & Joules ($J$)\\ \hline
+			Mass & $m$ & Kilograms ($kg$)\\ \hline
+			Change in temperature & $\Delta \Theta$ & Kelvin ($K$) \\ \hline
+	\end{tabular}
+\end{center}
 
 \section*{The kinetic model}
 \thispagestyle{empty}
@@ -75,5 +111,106 @@ We can change the internal energy of a gas in two ways:
 	\item Heating a gas gives the particles more energy and makes them move faster.
 	\item Doing work on a gas (e.g. compressing the gas) will increase the average kinetic energy of the molecules since the gas particles now collide with a moving wall and move off faster.
 \end{itemize}
+
+\section*{Calculating energy changes}
+\subsection*{Specific heat capacity}
+\textbf{Definition:}\textit{The specific heat capacity of a substance is the energy required per unit mass of the substance to raise the temperature by 1K.}
+
+The energy required to heat an object depends on three things:
+\begin{itemize}
+	\item The mass of the material
+	\item The change in temperature we are trying to achieve
+	\item The SHC of the material
+\end{itemize}
+
+We can represent this as an equation:
+\[
+	E = mc \Delta \Theta
+\]
+or we can rearrange it to get:
+\[
+	c = \frac{E}{m \Delta \Theta}
+\]
+From this equation, you can work out the unit of specific heat capacity - $J kg^{-1} K^{-1}$
+
+Substances with a low SHC are able to change temperature very quickly and so the gradient of a temperature/time graph is usually steep.
+
+\subsection*{Finding the specific heat capacity of a substance}
+To find the SHC of a material, all we have to do is supply a known amount of energy to a substance and monitor it's temperature change.
+
+Using an electric heater (with a known and constant current and voltage) we can supply a known amount of energy ($E$) to the substance. We must then find the difference in temperature before and after the energy has been supplied ($\Delta \Theta$). We can weigh the object to find it's mass and then sub all these values into the SHC equation to get our final answer.
+
+An alternate way of finding the SHC would be to (again) use an electric heater to supply a known amount of heat energy to the object and then plot a temperature/time graph. Then we divide both sides of the SHC equation by $\Delta t$:
+\[
+	\frac{E}{\Delta t} = mc\frac{\Delta \Theta}{\Delta t}
+\]
+Since $\frac{E}{\Delta t}$ is equal to the power supplied by the heater, we can work out the heater's power and sub that in:
+\[
+	P = VI
+\]
+\[
+	VI = mc\frac{\Delta \Theta}{\Delta t}
+\]
+We can re-arrange this equation to find the SHC:
+\[
+	c = \frac{VI \times \Delta t}{m \Delta \Theta}
+\]
+
+
+\subsubsection*{Sources of error}
+\begin{itemize}
+	\item It is desirable to have a low rate of heating since then the heat spreads evenly throughout the material.
+	\item The object must be thermally insulated. Some heat \textit{will} escape to the surroundings making obtained value for the SHC an overestimate.
+\end{itemize}
+
+\subsection*{Specific latent heat}
+\textbf{Definition:} \textit{The specific latent heat of a substance is the energy required per kilogram of the substance to change it's state without any change in temperature.}
+
+The specific \textbf{latent heat of fusion} is for \textbf{melting} and the \textbf{specific latent heat} of \textbf{vaporisation} is for boiling.
+
+\section*{Questions to practice}
+\textbf{Question 1}\\
+Explain why if you leave a pan on  the hob for a long time and the water reaches 100$^{\circ}C$, it doesn't all boil away at once.
+
+\textbf{Answer}\\
+Even though the average temperature of all the molecules is 100$^{\circ}C$, not all will be hot enough to evaporate. Even though the temperature is 100$^{\circ}C$ - the boiling point, it takes more energy to separate the molecules to form steam.
+
+\textbf{Question 2}\\
+Calculate the energy required to raise the temperature of 5kg of water from 20$^{\circ}C$ to 100$^{\circ}C$. (SHC of water = 4180 $Jkg^{-1}K^{-1}$)
+
+\textbf{Answer}\\
+\[
+	E = mc \Delta \Theta = 5 \times 4180 \times 80 = 1.7MJ
+\]
+
+\newpage
+
+\textbf{Question 3}\\
+An insulated block of mass $1.2kg$ is heated by a $50W$ heater for four minutes. The temperature change is from 22$^{\circ}C$ to 45$^{\circ}C$. Find the SHC of the block.
+
+\textbf{Answer}\\
+\[
+	c = \frac{E}{m \Delta \Theta} = \frac{Pt}{m \Delta \Theta} = \frac{50 \times (4*60)}{1.2 \times (45-22)} = 435 Jkg^{-1}K^{-1}
+\]
+
+\textbf{Question 4}\\
+A student measures the SHC of water. This is the data from his experiment:
+\begin{multicols}{2}
+	\begin{itemize}
+		\item	Mass of beaker = 150g
+		\item Mass of water = 522g
+		\item Current in the heater = 3.9A
+		\item p.d. across the heater = 11.4V
+		\item Initial temperature = 18.5$^{\circ}C$
+		\item Final temperature = 30.2$^{\circ}C$
+		\item Time taken = 13 minuets
+	\end{itemize}
+\end{multicols}
+
+\textbf{Answer}\\
+\[
+	c = \frac{VIt}{m \Delta \Theta} = \frac{3.9 \times 11.4 \times (13 \times 60)}{0.522 \times (30.2-18.5)} = 5678.2 Jkg^{-1}K^{-1}
+\]
+
 
 \end{document}
