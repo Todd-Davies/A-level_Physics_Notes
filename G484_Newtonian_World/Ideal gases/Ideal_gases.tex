@@ -1,0 +1,129 @@
+\documentclass{article}
+
+\usepackage[normalem]{ulem}
+\usepackage{fancyhdr}
+\usepackage{multirow}
+\usepackage[parfill]{parskip}
+\pagestyle{fancyplain}
+
+\title{Ideal gases}
+\author{Todd Davies}
+\date{\today}
+
+\begin{document}
+
+\rhead{Ideal gases}
+\lhead{\today}
+
+\maketitle
+
+\section*{What is an ideal gas?}
+\thispagestyle{empty}
+An ideal gas is a model of a gas we use that behaves according to the equations $pV = nRT$ and $pV = NkT$.
+
+\section*{Measuring gasses}
+A gas has many quantities, such as temperature, pressure density etc. What are they and how do we quantify them?
+
+\begin{itemize}
+	\item \textbf{Pressure} is the force exerted by the gas on the walls of it's container (we know about this from Thermal Physics). The units of pressure are Pascals ($Pa$) or $Nm^{-2}$.
+	\item \textbf{Temperature} The amount of heat energy the gas has, or the average amount of kinetic energy each molecule in the gas has. Remember work with kelvin for all the equations Ideal Gases! Remember the equation to convert between Celsius and Kelvin: 
+	\[
+		T(K) = \Theta(^\circ C) + 273
+	\]
+	\item \textbf{Volume} The amount of space the gas takes up. Measured in $m^3$.
+	\item \textbf{Mass} The mass of the gas is measured in $kg$ or $g$. Often the amount of gas is measured in $moles$.
+	
+	The definition of a mole is: \textit{One mole of any substance is the amount of that substance which contains the same number of particles as there are in 0.012kg of carbon 12.}
+	
+	This also means that one mole of a substance weighs it's atomic mass in grams (e.g. one mole of oxygen gas weighs $32g$). One mole is also known as Avogadro's constant and is equal to $6.01 \times 10^{23}$
+\end{itemize}
+
+\section*{Boyle's law}
+Boyle's law is defined as: \textit{The pressure exerted by a fixed mass of gas is inversely proportional to its volume, provided the temperature of the gas remains constant.}
+
+It can also be written as $p \propto \frac{1}{V}$ or $pV = constant$.
+
+However, this isn't very useful on it's own, you can derive this equation:
+\[
+	p_1V_1 = p_2V_2
+\]
+Which is much more useful.
+
+\section*{Charles' law}
+Boyle's law requires the temperature of the gas to be constant, so what about if the temperature changes? Charles' law is an equation to take this into account:
+\[
+	V \propto T
+\]
+\[
+	\frac{V}{T} = constant
+\]
+However, this relationship only holds when the amount of gas is fixed and the pressure is constant.
+
+\section*{Combining Boyle's law and Charles' law}
+We can combine these two equations to get:
+\[
+	\frac{pV}{T} = constant
+\]
+Or using the second version of Boyle's law:
+\[
+	\frac{p_1V_1}{T_1} = \frac{p_2V_2}{T_2}
+\]
+
+\section*{Assumptions about ideal gasses}
+There are some assumptions we must make about ideal gasses for these equations to hold. Unfortunately, examiners like to make you recite these:
+
+\begin{center}
+\begin{tabular}{|l|} \hline
+	A gas contains a very large number of spherical particles \\ \hline
+	The forces between particles are negligible, except during collisions \\  \hline
+	The volume of the particles is negligible compared to the \\volume occupied by the gas. \\ \hline
+	Most of the time, a particle moves in a straight line at a constant velocity.\\The time of collision with each other or the container walls is\\ negligible compared with the time between collisions. \\ \hline
+	Collisions of particles with each other and with the container are perfectly\\ elastic, so no kinetic energy is lost. \\ \hline
+\end{tabular}
+\end{center}
+
+\section*{The ideal gas equation}
+We have an equation that takes the amount of gas we have into account as well as the temperature, volume and pressure. This is the ideal gas equation.
+
+For particles, we use this one:
+\[
+	pV = NkT
+\]	
+Where $k$ is Boltzmann's constant which is equal to $1.38 \times 10^{-23}JK^{-1}$
+
+When we're working in moles, we can use:
+\[
+	pV = nRT
+\]
+Where n is the number of moles and R is the universal molar gas constant which is equal to $8.31Jmol^{-1}K^{-1}$.
+
+The Boltzmann constant, Avogadro constant and the universal molar gas constant are related using:
+\[
+	k = \frac{R}{N_A}
+\]
+
+\subsection*{Finding the number of moles}
+To use the ideal gas equation, we need the number of moles present in the gas. Often we need to work it out and can do so using this equation:
+\[
+	\textrm{\textit{Number of moles}} = \frac{mass(g)}{\textrm{\textit{molar mass(g $mol^{-1}$)}}}
+\]
+
+\section*{Temperature and the kinetic energy of molecules}
+We now know all about and can work out the macroscopic quantities of gases, but what about them on a microscopic level?
+
+There is a relationship between the temperature of a gas and the kinetic energy of it's particles:
+
+\textit{The mean translational kinetic energy of an atom or molecule in a ideal gas is proportional to the thermodynamic temperature of the gas}
+
+\textit{N.b. Translational kinetic energy is velocity, rotational kinetic energy is angular velocity.}
+
+We can also write that as:
+\[
+	\textrm{\textit{Mean translational kinetic energy of particle}} \propto T
+\]
+If we put in a constant, we get this:
+\[
+	E = \frac{3}{2}kT
+\]
+
+\end{document}
