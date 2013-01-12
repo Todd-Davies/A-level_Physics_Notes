@@ -20,11 +20,13 @@
 
 \section*{What's an oscillation?}
 \thispagestyle{empty}
-An oscillation is defined as a '\textit{A repetitive back and forth motion}' (an object that oscillates can also be said to vibrate).
+An oscillation is defined as a '\textit{A repetitive back and forth motion}'
+(an object that oscillates can also be said to be vibrating).
 
 \section*{Equations you need to know}
 \begin{itemize}
-	\item The angular velocity is related to the time period of the oscillation with the following equation:
+	\item The angular velocity is related to the time period of the oscillation
+	with the following equation:
 	\[
 		\omega = \frac{2 \pi}{T}
 	\]
@@ -32,7 +34,8 @@ An oscillation is defined as a '\textit{A repetitive back and forth motion}' (an
 	\[
 	 \omega = 2 \pi f
 	\]
-	\item In simple harmonic motion, displacement can be calculated using the following:
+	\item In simple harmonic motion, displacement can be calculated using the
+	following:
 	\[
 		x = A \sin (2 \pi ft)
 	\]
@@ -40,7 +43,8 @@ An oscillation is defined as a '\textit{A repetitive back and forth motion}' (an
 	\[
 		x = A \cos(2 \pi ft)
 	\]
-	\item The acceleration of a body undergoing simple harmonic motion is proportional to it's displacement from the equlibrium position:
+	\item The acceleration of a body undergoing simple harmonic motion is
+	proportional to it's displacement from the equlibrium position:
 	\[
 		a \propto x
 	\]
@@ -48,7 +52,8 @@ An oscillation is defined as a '\textit{A repetitive back and forth motion}' (an
 	\[
 		a = -(2 \pi f)^{2}x
 	\]
-	\item The maximum speed of an object undergoing simple harmonic motion can be found using:
+	\item The maximum speed of an object undergoing simple harmonic motion can
+	be found using:
 	\[
 		v_{max} = (2 \pi f)A
 	\]
@@ -65,8 +70,8 @@ The quantities and their respective units are shown in this table:
 			Time period & $T$ & Second ($s$) \\ \hline
 			Frequency & $f$ & Hertz ($Hz$) \\ \hline
 			Acceleration & $a$ & Metres per second squared ($ms^{-2}$) \\ \hline
-			Time & $t$ & Seconds($s$) \\ \hline
-			Angular velocity & $\omega$ & Radians per second($rad/s$) \\ \hline
+			Time & $t$ & Seconds ($s$) \\ \hline
+			Angular velocity & $\omega$ & Radians per second ($rad/s$) \\ \hline
 			Amplitude & $A$ & Meters ($m$) \\ \hline
 			Velocity & $v$ & Meters per second ($ms^{-1}$) \\ \hline
 			Displacement & $x$ & Meters ($m$) \\ \hline
@@ -76,22 +81,33 @@ The quantities and their respective units are shown in this table:
 \section*{Types of oscillation}
 There are two types of oscillation - free and forced.
 \subsection*{Free oscillations}
-This is when an object is left to vibrate at it's \textit{natural frequency}. The oscillating object is under no external influence (other than the influence that initiated the motion). 
+This is when an object is left to vibrate at it's \textit{natural frequency}.
+The oscillating object is under no external influence (other than the influence
+that initiated the motion). 
 
-An example of a free oscillation could be when you pluck a violin string. The string oscillates at its natural frequency which produces the note that you hear.
+An example of a free oscillation could be when you pluck a violin string. The
+string oscillates at its natural frequency which produces the note that you
+hear.
 \subsection*{Forced oscillations}
-A forced oscillation is when an object moves back and forth under the influence of another driving object.
+A forced oscillation is when an object moves back and forth under the influence
+of another driving object.
 
-An example of this is if you wave your hand at somebody. Your arm is driving your hand, but your hand isn't moving at it's natural frequency.
+An example of this is if you wave your hand at somebody. Your arm is driving
+your hand, but your hand isn't moving at it's natural frequency.
 
 \section*{Describing an oscillation}
-Oscillations have maximum velocity at the point where their displacement is zero. At this point, they have minimum acceleration.
-Oscillations have maximum acceleration at the point where their displacement is maximum. At this point they have minimum velocity.
-The shape of a graph plotting displacement against time is going to be something like:
+Oscillations have maximum velocity at the point where their displacement is
+zero. At this point, they have minimum acceleration.
+Oscillations have maximum acceleration at the point where their displacement is
+maximum. At this point they have minimum velocity.
+The shape of a graph plotting displacement against time is going to be something
+like:
 
 \begin{tikzpicture}
 	%curve
-		\draw (0.5,0) sin (1.5,1) cos (2.5,0) sin (3.5,-1) cos (4.5,0) sin (5.5,1) cos (6.5,0) sin (7.5,-1) cos (8.5,0) sin (9.5,1) cos (10.5,0) sin (11.5,-1);
+		\draw (0.5,0) sin (1.5,1) cos (2.5,0) sin (3.5,-1) cos (4.5,0) sin
+			(5.5,1) cos (6.5,0) sin (7.5,-1) cos (8.5,0) sin (9.5,1)
+			cos (10.5,0) sin (11.5,-1);
 	% zero crossing
 		\draw[dotted] (0.5,0) -- (11.5,0);
 	%axis + labels
@@ -106,22 +122,30 @@ The shape of a graph plotting displacement against time is going to be something
 		\node at (3.5,1.5) {Time period, $T$};
 	%Amplitude description
 		\draw [<->] (7.5,0) -- (7.5,-1);
-		\draw [fill=white,ultra thick,white] (7.6,-0.3) rectangle (9.7,-0.7); %to stop line overlap
+		%to stop line overlap
+		\draw [fill=white,ultra thick,white] (7.6,-0.3) rectangle (9.7,-0.7); 
 		\node at (8.7, -0.5) {Amplitude, $A$};
 \end{tikzpicture}
 
 This graph can be described as \textit{sinusoidal}.
 
 \section*{Phase}
-As you should know from the G482 module, waves have a phase. The phase of a wave is the point an oscillating mass has reached in it's cycle of oscillation. Phase is measured in degrees or radians. Two waves can have a phase difference, also measured in degrees or radians.
+As you should know from the G482 module, waves have a phase. The phase of a wave
+is the point an oscillating mass has reached in it's cycle of oscillation. Phase
+is measured in degrees or radians. Two waves can have a phase difference, also
+measured in degrees or radians.
 
 Here is a diagram of two identical waves out of phase by 180 degrees:
 
 \begin{tikzpicture}
 	%curve 1
-		\draw[dashed] (0.5,0) sin (1.5,1) cos (2.5,0) sin (3.5,-1) cos (4.5,0) sin (5.5,1) cos (6.5,0) sin (7.5,-1) cos (8.5,0) sin (9.5,1) cos (10.5,0) sin (11.5,-1);
+		\draw[dashed] (0.5,0) sin (1.5,1) cos (2.5,0) sin (3.5,-1) cos (4.5,0) 
+			sin (5.5,1) cos (6.5,0) sin (7.5,-1) cos (8.5,0) sin (9.5,1) 
+			cos (10.5,0) sin (11.5,-1);
 	%curve 2
-		\draw (0.5,0) sin (1.5,-1) cos (2.5,0) sin (3.5,1) cos (4.5,0) sin (5.5,-1) cos (6.5,0) sin (7.5,1) cos (8.5,0) sin (9.5,-1) cos (10.5,0) sin (11.5,1);
+		\draw (0.5,0) sin (1.5,-1) cos (2.5,0) sin (3.5,1) cos (4.5,0) 
+		sin (5.5,-1) cos (6.5,0) sin (7.5,1) cos (8.5,0) sin (9.5,-1) 
+		cos (10.5,0) sin (11.5,1);
 	% zero crossing
 		\draw[dotted] (0.5,0) -- (11.5,0);
 	%axis + labels
@@ -137,27 +161,35 @@ Here is a diagram of two identical waves out of phase by 180 degrees:
 \textit{N.b. 180 degrees is equal to $\pi$ radians.}
 
 \section*{Simple harmonic motion (SHM)}
-\textbf{Definition: }\textit{A body executes simple harmonic motion if its acceleration is directly proportional to its displacement from its equilibrium position and is always directed towards the equilibrium position.}
+\textbf{Definition: }\textit{A body executes simple harmonic motion if it's
+acceleration is directly proportional to its displacement from its equilibrium
+position and is always directed towards the equilibrium position.}
 
 Examples of SHM include:
 \begin{itemize}
 	\item The string of a violin after it has been plucked
 	\item The pendulum of a grandfather clock
-	\item When a pure sound travels through the air, the molecules in the air vibrate with SHM
-	\item The alternating current found in the national grid makes electrons in the wire move with SHM
+	\item When a pure sound travels through the air, the molecules in the air 
+		vibrate with SHM
+	\item The alternating current found in the national grid makes electrons in
+		the wire move with SHM
 \end{itemize}
 
-At A-level, only oscillations with one frequency are analysed, however SHM can also apply to objects that have a complicated motion equal to the resultant of many different waves.
+At A-level, only oscillations with one frequency are analysed, however SHM can
+also apply to objects that have a complicated motion equal to the resultant of
+many different waves.
 
 \subsection*{The requirements of SHM}
 The three requirements of SHM are:
 \begin{enumerate}
 	\item A mass must oscillate
 	\item There must be a position where the mass is in equilibrium
-	\item There must be a restoring force that acts to return the mass to equilibrium. This force is proportional to the displacement of the mass from the equilibrium position and is directed towards the equilibrium position.
+	\item There must be a restoring force that acts to return the mass to
+	equilibrium. This force is proportional to the displacement of the mass from
+	the equilibrium position and is directed towards the equilibrium position.
 \end{enumerate}
 
-\subsection*{Changes displacement, velocity and acceleration in SHM}
+\subsection*{Changes in displacement, velocity and acceleration in SHM}
 If you do maths mechanics, then you're in luck for this bit!
 We can find the displacement of the mass for a given time using this equation:
 \[
@@ -172,21 +204,29 @@ And if we differentiate again, we get:
 	\frac{dx^2}{d^2t} = a = - A (2 \pi f)^2 sin(2 \pi f t)
 \]
 
-\textit{N.b. We can sub in the equation for displacement into the equation we derived for the acceleration to get $a= -(2 \pi f)^2 x$ which is the equation on the formulae sheet.}
+\textit{N.b. We can sub in the equation for displacement into the equation we
+derived for the acceleration to get $a= -(2 \pi f)^2 x$ which is the equation on
+the formulae sheet.}
 
-However, that wasn't on the syllabus, but you \textit{do need to know} the following:
+However, that wasn't on the syllabus, but you \textit{do need to know} the
+following:
 \begin{itemize}
 	\item Velocity is highest when $x=0$ and lowest (zero) when $x=A$.
-	\item Acceleration is the inverse of the velocity (i.e. it's highest when $x=A$ and lowest when $x=0$).
+	\item Acceleration is the inverse of the velocity (i.e. it's highest when
+		$x=A$ and lowest when $x=0$).
 \end{itemize}
 
 \subsection*{Graphical representations of SHM}
-If you have a graph of either displacement, velocity or acceleration, you can draw a graph of the other two from the graph you do have. To do this, you plot gradient of the previous graph like so:
+If you have a graph of either displacement, velocity or acceleration, you can
+draw a graph of the other two from the graph you do have. To do this, you plot
+gradient of the previous graph like so:
 
 \begin{center}
 	\begin{tikzpicture}
 		%curve
-			\draw (0.5,0) sin (1.5,1) cos (2.5,0) sin (3.5,-1) cos (4.5,0) sin (5.5,1) cos (6.5,0) sin (7.5,-1) cos (8.5,0) sin (9.5,1) cos (10.5,0) sin (11.5,-1);
+			\draw (0.5,0) sin (1.5,1) cos (2.5,0) sin (3.5,-1) cos (4.5,0)
+			sin (5.5,1) cos (6.5,0) sin (7.5,-1) cos (8.5,0) sin (9.5,1)
+			cos (10.5,0) sin (11.5,-1);
 		%axis + labels
 			\draw [<->] (0.5,1) -- (0.5,-1);
 			\draw [->] (0.5,0) -- (11.5,0);
@@ -196,7 +236,9 @@ If you have a graph of either displacement, velocity or acceleration, you can dr
 
 	\begin{tikzpicture}
 		%curve
-			\draw (0.55,1) cos (1.5,0) sin (2.5,-1) cos (3.5,0) sin (4.5,1) cos (5.5,0) sin (6.5,-1) cos (7.5,0) sin (8.5,1) cos (9.5,0) sin (10.5,-1) cos (11.5,0);
+			\draw (0.55,1) cos (1.5,0) sin (2.5,-1) cos (3.5,0) sin (4.5,1)
+			cos (5.5,0) sin (6.5,-1) cos (7.5,0) sin (8.5,1) cos (9.5,0)
+			sin (10.5,-1) cos (11.5,0);
 		%axis + labels
 			\draw [<->] (0.5,1) -- (0.5,-1);
 			\draw [->] (0.5,0) -- (11.5,0);
@@ -206,7 +248,9 @@ If you have a graph of either displacement, velocity or acceleration, you can dr
 
 	\begin{tikzpicture}
 		%curve
-			\draw (0.5,0) sin (1.5,-1) cos (2.5,0) sin (3.5,1) cos (4.5,0) sin (5.5,-1) cos (6.5,0) sin (7.5,1) cos (8.5,0) sin (9.5,-1) cos (10.5,0) sin (11.5,1);
+			\draw (0.5,0) sin (1.5,-1) cos (2.5,0) sin (3.5,1) cos (4.5,0)
+			sin (5.5,-1) cos (6.5,0) sin (7.5,1) cos (8.5,0) sin (9.5,-1)
+			cos (10.5,0) sin (11.5,1);
 		%axis + labels
 			\draw [<->] (0.5,1) -- (0.5,-1);
 			\draw [->] (0.5,0) -- (11.5,0);
@@ -215,12 +259,14 @@ If you have a graph of either displacement, velocity or acceleration, you can dr
 	\end{tikzpicture}
 \end{center}
 
-If you look, you can see that the graph of the velocity is the gradient of the displacement, and the graph of acceleration is the gradient of the velocity. 
+If you look, you can see that the graph of the velocity is the gradient of the
+displacement, and the graph of acceleration is the gradient of the velocity. 
 
 By looking at these graphs, we can also deduce that $a \propto -x$.
 
 \subsection*{Angular frequency in SHM}
-The angular frequency of an object undergoing SHM relates to the frequency and time period via these equations:
+The angular frequency of an object undergoing SHM relates to the frequency and
+time period via these equations:
 \[
 	\omega = 2 \pi f
 \]
@@ -230,10 +276,12 @@ The angular frequency of an object undergoing SHM relates to the frequency and t
 \[
 	T = \frac{2 \pi}{\omega}
 \]
-This means you can work out the angular frequency of and object in SHM from a graph of displacement.
+This means you can work out the angular frequency of an object in SHM from a
+graph of displacement.
 
 \subsection*{The relationship between acceleration and displacement in SHM}
-If we were to draw a graph of acceleration on the y axis and displacement on the x axis of an object undergoing SHM, it would look like the following:
+If we were to draw a graph of acceleration on the y axis and displacement on the
+x axis of an object undergoing SHM, it would look like the following:
 
 \begin{center}
 	\begin{tikzpicture}
@@ -245,19 +293,28 @@ If we were to draw a graph of acceleration on the y axis and displacement on the
 			\node at (0,4.2) {$a$};
 			\node at (4.2,0) {$x$};
 		%crossing points
-			\draw [-, dotted] (3,3) -- (3, -0.5);
+			\draw [-, dotted, thick] (3,3) -- (3, -0.5);
 			\node at (3.3,-0.3) {$+A$};
-			\draw [-, dotted] (-3,-3) -- (-3, 0.5);
+			\draw [-, dotted, thick] (-3,-3) -- (-3, 0.5);
 			\node at (-2.7,0.3) {$-A$};
 		%gradient
-			\draw [-, dashed] (2,2) -- (2, -2);
-			\draw [-, dashed] (-2,-2) -- (2, -2);
-			\node at (2,-2.5) {$\frac{\delta y}{\delta x} = \frac{(2 \pi ft)^2 \textrm{\sout{$A \sin(2 \pi ft)$}}}{\textrm{\sout{$A \sin(2 \pi ft)$}}}$};
+			\draw [-, dashed, thick] (2,2) -- (2, -2);
+			\node at (2.3,-0.2) {$dy$};
+			\node at (-0.4,-2.2) {$dx$};
+			\draw [-, dashed, thick] (-2,-2) -- (2, -2);
+			\node at (2,-2.5) {$\frac{\delta y}{\delta x} 
+				= \frac{
+					(2 \pi ft)^2 \textrm{\sout{$A \sin(2 \pi ft)$}}
+				}{
+					\textrm{\sout{$A \sin(2 \pi ft)$}}
+				}$};
 			\node at (2.33,-3.1) {$=(2 \pi ft)^2 = \textrm{gradient}$};
 	\end{tikzpicture}
 \end{center}
 
-Notice that the gradient is independent of the amplitude of the graph, which explains why objects in SHM keep a constant frequency even though their amplitude may decrease over time.
+Notice that the gradient is independent of the amplitude of the graph, which
+explains why objects in SHM keep a constant frequency even though their
+amplitude may decrease over time.
 
 \subsection*{Maximum speed of an oscillator}
 From the equation 
@@ -268,28 +325,38 @@ We can deduce that:
 \[
 	v_{max} \propto A
 \]
-However, since (as we discovered in the previous section), $A$ is independent of $f$, we also find that:
+However, since (as we discovered in the previous section), $A$ is independent of
+$f$, we also find that:
 \[
 	v_{max} \propto f
 \]
 
 \subsection*{Energy changes in SHM}
-In SHM, there is a constant change between potential (gravitational, elastic etc) energy and kinetic energy. We can draw graphs of these energies in a system:
+In SHM, there is a constant change between potential (gravitational, elastic
+etc) energy and kinetic energy. We can draw graphs of these energies in a
+system:
 
 \begin{center}
 	\begin{tikzpicture}
 		%Graph 1
 			%PE
-				\draw[dashed] (1.5,2) cos (2,1) sin (2.5,0) cos (3,1) sin (3.5,2) cos (4,1) sin (4.5,0) cos (5,1) sin (5.5,2) cos (6,1) sin (6.5,0) cos (7,1) sin (7.5,2) cos (8,1) sin (8.5,0) cos (9,1) sin (9.5,2) cos (10,1) sin (10.5,0) cos (11,1) sin (11.5,2);
+				\draw[dashed] (1.5,2) cos (2,1) sin (2.5,0) cos (3,1)
+				sin (3.5,2) cos (4,1) sin (4.5,0) cos (5,1) sin (5.5,2)
+				cos (6,1) sin (6.5,0) cos (7,1) sin (7.5,2) cos (8,1)
+				sin (8.5,0) cos (9,1) sin (9.5,2) cos (10,1) sin (10.5,0)
+				cos (11,1) sin (11.5,2);
 			%KE
-			\draw (1.5,0) cos (2,1) sin (2.5,2) cos (3,1) sin (3.5,0) cos (4,1) sin (4.5,2) cos (5,1) sin (5.5,0) cos (6,1) sin (6.5,2) cos (7,1) sin (7.5,0) cos (8,1) sin (8.5,2) cos (9,1) sin (9.5,0) cos (10,1) sin (10.5,2) cos (11,1) sin (11.5,0);
+			\draw (1.5,0) cos (2,1) sin (2.5,2) cos (3,1) sin (3.5,0) cos (4,1)
+			sin (4.5,2) cos (5,1) sin (5.5,0) cos (6,1) sin (6.5,2) cos (7,1)
+			sin (7.5,0) cos (8,1) sin (8.5,2) cos (9,1) sin (9.5,0) cos (10,1)
+			sin (10.5,2) cos (11,1) sin (11.5,0);
 			%axis + labels
 				\draw [->] (1.5,0) -- (1.5,3);
-				\draw [->] (1.5,0) -- (11.5,0);
+				\draw [->] (1.5,0) -- (11.7,0);
 				\node at (10.9,-0.2) {$time$};
 				\node[rotate=90] at (1.2,1.5) {Energy};
 			%total energy label
-				\draw[thin, dotted] (1.5, 2) -- (11.5, 2);
+				\draw[thick, dotted] (1.5, 2) -- (11.5, 2);
 				\node at (12.2, 2.2) {Total};
 				\node at (12.2, 1.8) {Energy};
 			%one oscillation
@@ -306,17 +373,17 @@ In SHM, there is a constant change between potential (gravitational, elastic etc
 				\node at (6.5,-5.3) {Displacement};
 				\node at (6.5,-1.2) {Energy};
 			%amplitude
-				\draw[dotted] (3.5,-5) -- (3.5,-4.6);
+				\draw[dotted, thick] (3.5,-5) -- (3.5,-4.6);
 				\node at (3.5,-5.3) {$-A$};
-				\draw[dotted] (9.5,-5) -- (9.5,-4.6);
+				\draw[dotted, thick] (9.5,-5) -- (9.5,-4.6);
 				\node at (9.5,-5.3) {$+A$};
 			%total energy
-				\draw[dotted] (3.5,-2) -- (9.5,-2);
+				\draw[dotted, thick] (3.5,-2) -- (9.5,-2);
 				\node at (10.2, -1.8) {Total};
 				\node at (10.2, -2.2) {Energy};
 		%Labels
 			%PE label
-				\draw[dashed] (4.5, -7) -- (5.5, -7);
+				\draw[dashed, thick] (4.5, -7) -- (5.5, -7);
 				\node at (7.2, -7) {Potential energy};
 			%KE label
 				\draw (4.5, -8) -- (5.5, -8);
@@ -328,42 +395,58 @@ In SHM, there is a constant change between potential (gravitational, elastic etc
 These graphs show that:
 \begin{itemize}
 	\item Kinetic energy is maximum when the displacement is equal to zero.
-	\item Potential energy is maximum when the displacement is equal to the amplitude of the motion.
+	\item Potential energy is maximum when the displacement is equal to the
+	amplitude of the motion.
 	\item At any point, $KE + PE = $\textit{ total energy}
 \end{itemize}
 
 \section*{Damped oscillations}
-The amplitude of a damped oscillation decreases exponentially with time. This means that is loses lots of energy at first, but takes a long time to stop completely.
+The amplitude of a damped oscillation decreases exponentially with time. This
+means that is loses lots of energy at first, but takes a long time to stop
+completely.
 
-Damping is achieved by introducing a frictional force into a mechanical oscillating system. By adding this force, energy is constantly removed from the system, and so the amplitude and maximum speed of the oscillation decrease.
+Damping is achieved by introducing a frictional force into a mechanical
+oscillating system. By adding this force, energy is constantly removed from the
+system, and so the amplitude and maximum speed of the oscillation decrease.
 
 \section*{Resonance}
-Resonance is a phenomena where if the frequency of the driving oscillation matches the natural frequency of the object being driven, then the amplitude of the driven object increases exponentially.
+Resonance is a phenomena where if the frequency of the driving oscillation
+matches the natural frequency of the object being driven, then the amplitude of
+the driven object increases exponentially.
 
-For resonance to occur, the system must be capable of moving freely. We also need a driving force. The following statements apply to a system in resonance:
+For resonance to occur, the system must be capable of moving freely. We also
+need a driving force. The following statements apply to a system in resonance:
 \begin{itemize}
 	\item Natural frequency = driving frequency
 	\item Amplitude is maximum
 	\item Driven system absorbs the greatest possible energy from the driver
 \end{itemize}
 
-We can employ damping to reduce the effects of resonance. For example in skyscrapers, damping of the foundations of the building can save the building from collapse in the event of an earthquake.
+We can employ damping to reduce the effects of resonance. For example in
+skyscrapers, damping of the foundations of the building can save the building
+from collapse in the event of an earthquake.
 
-Resonance can also be useful. Microwaves make water molecules vibrate at their natural frequency and so give them kinetic energy, which heats up the food they are in.
+Resonance can also be useful. Microwaves make water molecules vibrate at their
+natural frequency and so give them kinetic energy, which heats up the food they
+are in.
 
 \section*{Questions to practice}
 \textbf{Question 1}\\
-List the three features of a swinging pendulum that satisfy the requirements for SHM.
+List the three features of a swinging pendulum that satisfy the requirements for
+SHM.
 
 \textbf{Answer}\\
 \begin{itemize}
-	\item Restoring force in direction of equilibrium point - horizontal component of gravity.
-	\item Equilibrium point where there is no net force.
+	\item Restoring force in direction of equilibrium point - horizontal
+	component of gravity.
+	\item Equilibrium point where there is no net force - the bottom of the
+	swing.
 	\item A mass that oscillates - the bob.
 \end{itemize}
 
 \textbf{Question 2}\\
-An object undergoing SHM goes through two oscillations in one second. Find it's time period, frequency and angular frequency.
+An object undergoing SHM goes through two oscillations in one second. Find it's
+time period, frequency and angular frequency.
 
 \textbf{Answer}\\
 Time period = 1/2 = 0.5 seconds\\
@@ -371,7 +454,11 @@ Frequency = 1/T = 2 Hz\\
 Angular frequency = $2 \pi f = 2 \pi 2 = 4 \pi$\\
 
 \textbf{Question 3}\\
-A trolley of mass $m$ is fixed to the end of a spring. The spring can be compressed and extended. The spring has a force constant $k$. The other end of the spring is attached to a vertical wall. The trolley is on a smooth horizontal table, and it oscillates once it has been displaced from it's equilibrium position. Find an equation for the Time Period of the trolley.
+A trolley of mass $m$ is fixed to the end of a spring. The spring can be
+compressed and extended. The spring has a force constant $k$. The other end of
+the spring is attached to a vertical wall. The trolley is on a smooth horizontal
+table, and it oscillates once it has been displaced from it's equilibrium
+position. Find an equation for the Time Period of the trolley.
 
 \textbf{Answer}\\
 \begin{multicols}{2}
@@ -399,14 +486,17 @@ A trolley of mass $m$ is fixed to the end of a spring. The spring can be compres
 Define Simple Harmonic Motion.
 
 \textbf{Answer}\\
-The motion of an oscillator where it's acceleration is directly proportional to it's displacement from it's equilibrium position and is directed towards that position.
+The motion of an oscillator where it's acceleration is directly proportional to
+it's displacement from it's equilibrium position and is directed towards that
+position.
 
 \textbf{Question 5}\\
-A pendulum has an acceleration of -300x where x is it's displacement. Work out it's frequency.
+A pendulum has an acceleration of -300x where x is it's displacement. Work out
+it's frequency.
 
 \textbf{Answer}\\
 \[
-	-(2 \pi f)x = -300x
+	-(2 \pi f)^2x = -300x
 \]
 \[
 	2 \pi f = \sqrt{300}
