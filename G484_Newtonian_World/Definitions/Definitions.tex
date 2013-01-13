@@ -2,8 +2,9 @@
 
 \usepackage{fancyhdr}
 \usepackage{array}
-\usepackage{tabularx}
-\usepackage{pbox}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{calc}
 \pagestyle{fancyplain}
 
 \title{Definitions \\ \large{G484 - Newtonian World}}
@@ -19,40 +20,96 @@
 
 \thispagestyle{empty}
 
-%\begin{tabular}{>{\bf}l | l}
-%\large{Name} & \large{\textbf{Definition}}
-%\end{tabular}
-\begin{tabularx}{\textwidth}{>{\bf\centering\arraybackslash}m{1in} | X}
-  \large{Name} & \large{\textbf{Definition}}\\ \hline
+\begin{longtable}{>{\bf\centering\arraybackslash}p{1in} 
+  p{\textwidth-4\tabcolsep-1in}}
+
+\large{Name} & \large{\textbf{Definition}}\\ \midrule
+\endfirsthead
+\large{Name} & \large{\textbf{Definition}}\\ \midrule
+\endhead
+\midrule
+\multicolumn{2}{r}{continued \ldots}
+\endfoot
+%\midrule
+\endlastfoot
   Newton's first law & An object will remain at rest or keep 
-  	travelling at a constant velocity unless it is acted upon by an external 
-  	force.\\ \hline
+    travelling at a constant velocity unless it is acted upon by an external 
+    force.\\ \midrule
   Newton's second law & The net force acting on an object is equal
-  	to the rate of change of it's momentum. The net force and change in momentum
-  	are in the same direction.\\ \hline
+    to the rate of change of it's momentum. The net force and change in momentum
+    are in the same direction.\\ \midrule
   Newton's third law & When two bodies interact, the forces they
-  	exert on each other are equal and opposite.\\ \hline
+    exert on each other are equal and opposite.\\ \midrule
   Linear momentum & The product of an object's mass and velocity
-  	($p=mv$). Momentum is a vector quantity.\\ \hline
+    ($p=mv$). Momentum is a vector quantity.\\ \midrule
   Net force on a body & Is said to be equal to the rate of change
-  	of the momentum of the body (Impulse).\\ \hline
+    of the momentum of the body (Impulse).\\ \midrule
   Impulse of a force & The product of the force ($F$) and the time ($\Delta t$)
-  	for which it acts ($impulse = F \Delta t$).\newline \newline This is the
-  	area under a force time graph.\newline \newline Impulse = change in momentum
-  	($impulse = \Delta p$)\\ \hline
+    for which it acts ($impulse = F \Delta t$).\newline \newline This is the
+    area under a force time graph.\newline \newline Impulse = change in momentum
+    ($impulse = \Delta p$)\\ \midrule
   Principle of conservation of momentum & In a closed system, when bodies
-  	interact, the total momentum in any specified direction remains constant.\\
-  	\hline
+    interact, the total momentum in any specified direction remains constant.\\
+    \midrule
   Perfectly elastic collision & A collision is perfectly elastic
-  	when kinetic energy is conserved. Momentum and total energy are always
-  	conserved.\\ \hline
+    when kinetic energy is conserved. Momentum and total energy are always
+    conserved.\\ \midrule
   Inelastic collision & A collision is inelastic when the kinetic
-  	energy is not conserved, and some is transferred to other forms such as
-  	heat. Momentum and total energy are always conserved.\\ \hline
-  Radian & $\pi$ radians = $180^\circ$\\ \hline
+    energy is not conserved, and some is transferred to other forms such as
+    heat. Momentum and total energy are always conserved.\\ \midrule
+  Radian & $\pi$ radians = $180^\circ$\\ %\midrule
+  Centripetal force & The net force acting on an object moving in a circle. It is always directed towards the center of the circle. \\ \midrule
   Gravitational field strength & The gravitational force 
-  	experienced by an object per unit mass ($g = \frac{F}{m}$).\\ \hline
-  Newton's law of gravitation & Any two point masses attract each other with a force that is directly proportional to the square of their masses and inversely proportional to the square of their seperation\\ \hline
-\end{tabularx}
+    experienced by an object per unit mass ($g = \frac{F}{m}$).\\ \midrule
+  Newton's law of gravitation & Any two point masses attract each other with a
+    force that is directly proportional to the square of their masses and
+    inversely proportional to the square of their seperation\\ \midrule
+  Period of an object & The time taken by any object (e.g. a planet) to complete
+    an one orbit. \newline \newline The period is also the time taken for one
+    complete oscillation of a vibrating object.\\ \midrule
+  Geostationary orbit & The orbit of an artificial satellite which has a period
+    equal to one day so that the satellite remains above the same point on the
+    Earth's equator. \newline \newline From Earth, the satellite appars to be
+    stationary.\\ \midrule
+  Displacement & The distance an object is between where it started a motion and
+    where it is now.\\ \midrule
+  Amplitude & The maximum displacement of a particle from it's equlibrium
+    position.\\ \midrule
+  Frequency & The number of oscillations of a particle per unit time.\\ \midrule
+  Angular frequency & The rate of change of an angle (expressed in radian per 
+    second). \newline \newline Angular frequency $\omega = \frac{2\pi}{T}$\\ 
+    \midrule
+  Phase difference & The fraction of an oscillation between the vibrations of
+    two oscillating particles, exppressed in degrees or radians.\\ \midrule
+  Simple harmonic motion (SHM) & Motion of an oscillator where its acceleration
+    is directly proportional to its displacement from its equlibrium position
+    and is directed towards that position.\\
+  Conditions for simple harmonic motion & A mass must oscillate \newline
+    \newline A position where the mass is in equlibrium\newline \newline A
+    restoring force that acts to return the mass to its equlibrium position. The
+    restoring force is directly proportional to the displacement of the mass
+    from its equlibrium posision and is directed towards that point.\\ \midrule
+  Pressure & The ratio of force to the area over which the force is distributed.
+    \\\midrule
+  Internal energy & The sum of the random distributions of kinetic and
+    potiential energies of the atoms or molecules in a system.\\ \midrule
+  Specific heat capacity & The energy required per unit mass of a substance to
+    change its state without any change in temperature.\newline \newline
+    Unit is $Jkg^(-1)$\\ \midrule
+  Latent heat of fusion & The energy absorbed by a substance to change state
+    from solid to liquid without any change in temperature. \\ \midrule
+  Latent heat of vaporisation & The energy absorbed by a substance to change
+    state from liquid to gas without any change in temperature. \\ \midrule
+  Boyle's law & The pressure exerted by a fixed mass of gas is inversely
+    proportional to its volume, provided the temperature of the gas remains
+    constant.\\ \midrule
+  Assumptions of the kinetic theory of gasses & A gas contains a very large
+    number of spherical particles.\newline \newline The forces between particles
+    are negligible, except during collisions.\newline \newline The volume of the particles is negligible compared to the volume occupied by the gas.\newline
+    \newline Most of the time, a particle moves in a straight line at a constant velocity. The time of collision with each other or with the container walls
+    is negligible compared with the time between collisions.\newline \newline The
+    collisions of particles with each other and with the container are prefectly
+    elastic, so that no kinetic energy is lost.\\ \midrule
+\end{longtable}
 
 \end{document}
