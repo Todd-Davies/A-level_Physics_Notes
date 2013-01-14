@@ -1,9 +1,11 @@
+%& --shell-escape dubble
 \documentclass{article}
 
 \usepackage[normalem]{ulem}
 \usepackage{fancyhdr}
 \usepackage{multirow}
 \usepackage[parfill]{parskip}
+\usepackage{tikz}
 \pagestyle{fancyplain}
 
 \title{Ideal gases}
@@ -99,7 +101,26 @@ remains constant.}
 
 It can also be written as $p \propto \frac{1}{V}$ or $pV = constant$.
 
-This isn't very useful on it's own, but you can derive this equation:
+We can draw a graph of pressure and volume, and a graph of pressure and the
+reciprocal of the volume like so:
+\begin{center}
+\begin{tikzpicture}
+	\draw[->] (0,0) -- (0,2);
+	\draw[->] (0,0) -- (2,0);
+	\draw plot [smooth] coordinates {(0,2)(0.2,0.8)(0.4,0.4333)(0.6,0.3)
+		(0.8,0.2)(1,0.1333)(1.2,0.0857)(1.4,0.05)(1.6,0.0222)(1.8,0.01111)
+		(2,0)};
+	\node at (1, -0.5) {$v$};
+	\node at (-0.5, 1) {$p$}; 
+
+	\draw[->] (5,0) -- (5,2);
+	\draw[->] (5,0) -- (7,0);
+	\draw[-] (5,0) -- (6.8,1.8);
+	\node at (6, -0.5) {$\frac{1}{v}$};
+	\node at (4.5, 1) {$p$}; 
+\end{tikzpicture}
+\end{center}
+The $p \propto \frac{1}{v}$ equation isn't very useful on it's own, but you can derive this equation:
 \[
 	p_1V_1 = p_2V_2
 \]
