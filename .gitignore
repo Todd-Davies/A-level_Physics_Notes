@@ -10,6 +10,7 @@
 *.glg
 *.glo
 *.gls
+*.gnuplot
 *.idx
 *.ilg
 *.ind
