@@ -6,8 +6,10 @@
 \usepackage{tikz}
 \usepackage{pgfplots}
 \usepackage{multicol}
-\usepackage{mhchem}
+\usepackage[version=3]{mhchem}
 \pagestyle{fancyplain}
+
+\pgfplotsset{compat=1.7}
 
 \title{Atomic structure}
 \author{Todd Davies\\
@@ -24,7 +26,19 @@
 \section*{Alpha particle scattering and the nucleus}
 \thispagestyle{empty}
 
+Ernest Rutherford was a scientist studying at Cambridge university. He did an
+experiment that involved firing $\alpha$ particles at gold foil. He noticed that
+most of the particles passed straight through, while very few bounced back or
+were deflected. He concluded that most of the atom is empty space, and the
+nucleus is very small.
+
 \section*{The simple atomic model}
+
+Rutherfords idea of how the atom was structured was quickly accepted and soon
+after, the proton was discovered. However, the proton was too small to account
+for all the mass of the atom, which resulted in the discovery of the neutron. It
+was easy to work out that the neutrons and protons were situated in the center
+of the nucleus and the electrons orbited in a cloud around it.
 
 \section*{Nucleons and electrons}
 
@@ -32,12 +46,14 @@ An atom can be described by the particles that it contains. The basic set of
 particles that define atoms are well known, and are as follows:
 
 \begin{center}
-\begin{tabular}{l|l|l}
-	{\bf Particle} & {\bf Relative mass} & {\bf Charge} \\ \hline
-	Proton & 1 & +{\it e}\\ \hline
-	Neutron & 1 & 0\\ \hline
-	Electron & $\frac{1}{1836}$ & -{\it e}
-\end{tabular}
+ 	\renewcommand{\arraystretch}{1.2}
+	\begin{tabular}{l|l|l}
+		{\bf Particle} & {\bf Relative mass} & {\bf Charge} \\ \hline
+		Proton & 1 & +{\it e}\\ \hline
+		Neutron & 1 & 0\\ \hline
+		Electron & $\frac{1}{1836}$ & -{\it e}
+	\end{tabular}
+
 \end{center}
 
 \textit{N.b. Protons and neutrons are often refered to as Nucleons, since they
@@ -73,7 +89,7 @@ magnitude of the force is related to the seperation between the nucleons.
 This graph shows how the strong force changes with distance:
 
 \begin{center}
-	\includegraphics{strong_force_graph}
+	\includegraphics[scale=0.5]{force_graph}
 \end{center}
 
 \subsection*{Padding with neutrons}
@@ -96,7 +112,11 @@ force in the atom and stableising the nucleus. This is also why isotopes with
 the incorrect number of neutrons are usually unstable.
 
 \section*{Families of particles}
+
 There are two classes of sub-atomic particles that we use, leptons and hadrons.
+
+An easy way to remember the families is to remember that the word lepton in
+Ancient Greek means {\it light}, while hadron means {\it bulky}.
 
 \subsection*{Leptons}
 
@@ -104,5 +124,86 @@ Particles that are unaffected by the strong force are leptons. There are twelve
 leptons altogether, since each of the 'main' three (the electron, the muon and
 the tau) has an associated neutrino and they all have antiparticles.
 
+\subsection*{Hadrons}
 
+Particles that are affected by the strong force are hadrons. Hadrons are best described by another class of fundamental particle, quarks, so I'll describe them first.
+
+\subsection*{Quarks}
+
+A quark is a type of funadmental particle, they are strange since they can never
+exist in isolation. Quarks always combine to form heavier particles, the
+hadrons. There are twelve different types of quark (six quarks and six
+antiquarks) as follows:
+
+\begin{center}
+
+	\renewcommand{\arraystretch}{1.2}
+	\begin{tabular}{|l|c|c|c|c|}
+		\hline
+		Quark & Symbol & Charge (in units of $e$) & Baryon number & Strangness \\ 
+		\hline
+
+		Up & $u$ & $\frac{2}{3}$ & $\frac{1}{3}$ & 0 \\
+
+		Down & $d$ & $-\frac{1}{3}$ & $\frac{1}{3}$ & 0 \\
+
+		Strange & $s$ & $-\frac{1}{3}$ & $\frac{1}{3}$ & -1 \\
+
+		Charm & $c$ & $\frac{2}{3}$ & $\frac{1}{3}$ & 0 \\
+
+		Top & $t$ & $\frac{2}{3}$ & $\frac{1}{3}$ & 0 \\
+
+		Bottom & $b$ & $-\frac{1}{3}$ & $\frac{1}{3}$ & 0 \\
+
+		\hline
+
+	\end{tabular}
+
+\end{center}
+
+{\it N.b. Antiquarks have a dash above the symbol that represents them (e.g. an
+Antiup has the symbol $\bar{u}$), have a charge opposite to the charge of the
+normal version of them and have the same mass as their normal version.}
+
+\subsection*{Back to hadrons}
+So when quarks combine, they form hadrons. For example:
+
+\begin{itemize}
+	
+	\item A proton is made of two up quarks and a down quark ($u$ $u$ $d$).
+
+	\item A neutron is made of one up quark and two down quarks ($u$ $d$ $d$).
+
+	\item A pi$^+$ meson is made of an up quark and a down antiquark ($u$
+	$\bar{d}$).
+
+	\item A phi meson is made of a strange quark and an antistrange quark ($s$
+	$\bar{s}$)
+
+\end{itemize}
+
+The properties of any hadron are the sum of the properties of the quarks from
+which it is made. For example, to find the charge of a proton, we add up the
+charges of two up quarks and a down quark ($\frac{2}{3}+\frac{2}{3}+-\frac{1}{3}
+= 1$).
+
+When hadrons interact, all the values for the quantities of their
+component quarks (charge, baryon number, strangeness, charm, bottomness and
+topness) are conserved.
+
+\section*{The evidence for quarks}
+
+Isolated quarks have never been detected, however there is evidence for their
+existance.
+
+Electron diffraction can be used to study matter on an atomic and sub-atomic
+scale. Electrons are accelerated at high velocities and, behaving like waves are
+diffracted by the particles in the target. The pattern of these diffracted
+electrons is then analysed to determine the size and shape of the particles.
+
+Scientists have used this method to analyse protons, the results of which
+suggest that protons have an internal structure, and the particles that make up
+the structure have various charges that are fractions of $e$.
+
+%TODO:Questions!
 \end{document}
