@@ -1,0 +1,68 @@
+\documentclass{article}
+
+\usepackage[normalem]{ulem}
+\usepackage{fancyhdr}
+\usepackage[parfill]{parskip}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{multicol}
+\usepackage[version=3]{mhchem}
+\pagestyle{fancyplain}
+
+\pgfplotsset{compat=1.7}
+
+\title{Nuclear Physics}
+\author{Todd Davies}
+\date{\today}
+
+\begin{document}
+
+\rhead{Nuclear Physics}
+\lhead{\today}
+
+\maketitle
+
+\section*{Nuclear fission}
+\thispagestyle{empty}
+
+Nuclear fission occurs when a large and unstable nucleus splits into two smaller
+nuclei and some neutrons. This happens when a neutron hits the large and
+unstable nucleus. The neutrons that are released will fission another unstable
+nucleus if they hit it, which fuels more fission.
+
+This is what happens in nuclear power plants, and it releases energy.
+
+We can represent fission reactions by equations such as this:
+\marginpar{Note the number of protons and neutrons are constant in the reaction}
+
+\[
+	^{1}_{0}n + ^{235}_{92}U \rightarrow 
+	^{92}_{36}Kr + ^{141}_{56}Ba + 3^{1}_{0}n
+\]
+
+There are intermediate reactions in these reactions too since the large unstable
+nucleus probably won't decay into two other nuclei straight away, but rather
+accept the incoming neutron and then decay:
+
+\[
+	^{1}_{0}n + ^{235}_{92}U \rightarrow 
+	^{236}_{92}U^{*} \rightarrow
+	^{92}_{36}Kr + ^{141}_{56}Ba + 3^{1}_{0}n
+\]
+
+\section*{Energy release in fission}
+
+The measured mass of any nucleus is less than the mass of it's consitiuent
+particles. This 'loss' of mass is known as the {\it mass defect} of an atom, and
+it is linked to the {\it binding energy} of the nucleus.
+
+The binding energy is the minimum energy needed to seperate all of the protons
+and neutrons in the nucleus and we can use $E = MC^2$ to work it out.
+
+%TODO:Verify this...
+
+The change in the binding energy between the reactant nucleus of the fission
+reaction and the products of the fission reaction results in the release of
+energy.
+
+\end{document}
