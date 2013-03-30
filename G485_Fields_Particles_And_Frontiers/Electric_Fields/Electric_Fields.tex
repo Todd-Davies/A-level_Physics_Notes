@@ -1,0 +1,101 @@
+\documentclass{article}
+
+\usepackage[normalem]{ulem}
+\usepackage{fancyhdr}
+\usepackage[parfill]{parskip}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{multicol}
+\usepackage[version=3]{mhchem}
+
+\pagestyle{fancyplain}
+
+\pgfplotsset{compat=1.7}
+
+\title{Electric fields}
+\author{Todd Davies}
+\date{\today}
+
+\begin{document}
+
+\rhead{Electric fields}
+\lhead{\today}
+
+\maketitle
+
+\section*{Equations to learn}
+\thispagestyle{empty}
+
+%TODO:Write section on equations to learn
+
+\section*{Electric fields}
+
+If an object is charged, then the influence of it's charge spreads into the
+space around it and we say that there is an electric field around the object.
+Some objects, when placed inside the field will interact with this field. An
+example of one such object is gold foil, which will bend towards (be attracted
+to) a negatively charged object.
+
+\section*{Electrical field lines}
+
+We can represent an electrical field by drawing it as a series of lines. Their direction shows the direction of the field (from positive to negative) and their spacing indicates the strength of the field (wider spacing for weaker fields). 
+
+\section*{Electric field strength}
+
+The strength of an electric field at a point is defined as:
+
+{\it The electric field strength at a point is the force per unit charge exerted
+on a positive charge placed at that point.}
+
+\subsection*{A uniform field}
+
+A uniform field can be set up by putting the terminals of a power supply with a
+high potiential difference to two parallel (not touching) metal plates. This
+creates an uniform electric field, where the field lines are evenly spaced.
+
+In this situation, the following relationships apply between properties of the
+field:
+
+\[
+	E \propto V
+\]
+
+\[
+	E \propto \frac{1}{d}
+\]
+
+Which we can combine to get: \marginpar{If you want the magnitude of the
+electric field, you can forget the minus sign}
+
+\[
+	E = -\frac{V}{d}
+\]
+
+Where $d$ is the distance between the plates, $V$ is the potential difference
+and $E$ is the strength of the electric field.
+
+%TODO:Do worked example on page 108 in text book
+
+\section*{The force on a charge}
+
+To calculate the force experienced by a charged object in an electric field, we can combine the equation for field strength with the equation for magnitude:
+
+\begin{center}
+	$E = \frac{F}{Q} + E = \frac{V}{d} \rightarrow $
+	$\frac{F}{Q} = \frac{V}{d}	\rightarrow $
+	$F = \frac{VQ}{d}$
+\end{center}
+
+If you're getting bogged down in equations, the best thing to do is often to remember that positively charged objects are attracted to negatively charged objects and vice versa.
+
+\section*{Coloumb's law}
+
+\marginpar{Note how similar to the definition of a gravitational field it is...}
+
+{\it Any two point charges exert an electrical force on each other that is
+proportional to the product of their charges and inversly proportional to the
+square of their seperation.}
+
+%TODO:Finish section on columbs law
+
+\end{document}
