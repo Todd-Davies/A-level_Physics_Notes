@@ -7,18 +7,19 @@
 \usepackage{pgfplots}
 \usepackage{multicol}
 \usepackage[version=3]{mhchem}
+\usepackage{SIunits}
 
 \pagestyle{fancyplain}
 
 \pgfplotsset{compat=1.7}
 
-\title{Electric fields}
+\title{8 - Electric fields}
 \author{Todd Davies}
 \date{\today}
 
 \begin{document}
 
-\rhead{Electric fields}
+\rhead{8 - Electric fields}
 \lhead{\today}
 
 \maketitle
@@ -38,7 +39,9 @@ to) a negatively charged object.
 
 \section*{Electrical field lines}
 
-We can represent an electrical field by drawing it as a series of lines. Their direction shows the direction of the field (from positive to negative) and their spacing indicates the strength of the field (wider spacing for weaker fields). 
+We can represent an electrical field by drawing it as a series of lines. Their
+direction shows the direction of the field (from positive to negative) and their
+spacing indicates the strength of the field (wider spacing for weaker fields).
 
 \section*{Electric field strength}
 
@@ -78,7 +81,8 @@ and $E$ is the strength of the electric field.
 
 \section*{The force on a charge}
 
-To calculate the force experienced by a charged object in an electric field, we can combine the equation for field strength with the equation for magnitude:
+To calculate the force experienced by a charged object in an electric field, we
+can combine the equation for field strength with the equation for magnitude:
 
 \begin{center}
 	$E = \frac{F}{Q} + E = \frac{V}{d} \rightarrow $
@@ -86,7 +90,9 @@ To calculate the force experienced by a charged object in an electric field, we 
 	$F = \frac{VQ}{d}$
 \end{center}
 
-If you're getting bogged down in equations, the best thing to do is often to remember that positively charged objects are attracted to negatively charged objects and vice versa.
+If you're getting bogged down in equations, the best thing to do is often to
+remember that positively charged objects are attracted to negatively charged
+objects and vice versa.
 
 \section*{Coloumb's law}
 
@@ -96,6 +102,89 @@ If you're getting bogged down in equations, the best thing to do is often to rem
 proportional to the product of their charges and inversly proportional to the
 square of their seperation.}
 
-%TODO:Finish section on columbs law
+The force is proportional to the product of the charges ($F \propto Qq$) and it
+is also proportinal to the reciprocal of the square of the distance ($F \propto
+\frac{1}{distance^2}$). Therefore:
+
+\[
+	F \propto \frac{Qq}{r^2}
+\]
+
+If we add a constant we can get an equation:
+
+\[
+	F=k\frac{Qq}{r^2}
+\]
+
+Given that the constant of proportionality is $k=\frac{1}{4\pi\epsilon_0}$, we
+can formulate Coloumb's law to be:
+
+\[
+	F = \frac{Qq}{4\pi\epsilon_0r^2}
+\]
+
+If we sub in $\pi$ (3.14...) and $\epsilon$
+($8.85\times10^{-12}\farad\meter^{-1}$), we can get:
+
+\[
+	F \approx 9.0\times10^9\frac{Qq}{r^2}
+\]
+
+{\it Note: If we have a positive and a negative charge, then the force will be
+negative, which we interprate as an attraction}
+
+The distance between two uniform spheres is the distance between their centers.
+They behave as though all their charge was concentrated at their center.
+
+\section*{Electric field strength for a radial field}
+
+If we substitute $E=\frac{F}{Q}$ into the equation we just formulated for the
+force between two point charges ($F = \frac{Qq}{4\pi\epsilon_0r^2}$), we get an
+equation for the electric field strength of a point:
+
+\[
+	E = \frac{Q}{4\pi\epsilon_0r^2}
+\]
+
+There are two things to note here:
+
+\begin{enumerate}
+
+	\item Note how the value of $E$ will decrease by a factor of four when the
+	distance $r$ increases by a factor of two.
+
+	\item Since electric field is a vector quantity, in order for it to be
+	completely specified, it must be given with a direction too.
+
+\end{enumerate}
+
+\section*{Comparing with gravitational fields}
+
+There are a number of differences and similarities between electrical and
+gravitational fields:
+
+\subsection*{Differences}
+
+\begin{itemize}
+
+	\item Gravitational fields arise from mass, and electrical fields are
+	brought about by charges.
+
+	\item Gravitational fields only attract, yet electrical fields also repulse.
+
+\end{itemize}
+
+\subsection*{Similarities}
+
+\begin{itemize}
+
+	\item Both have parallel field lines for uniform fields.
+
+	\item Both have radial field lines for spherical fields.
+
+	\item Force and (electrical/gravitational) field strength obay an inverse
+	quare law with distance.
+
+\end{itemize}
 
 \end{document}

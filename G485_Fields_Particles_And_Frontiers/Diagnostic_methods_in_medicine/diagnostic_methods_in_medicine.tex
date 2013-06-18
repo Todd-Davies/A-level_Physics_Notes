@@ -1,0 +1,103 @@
+\documentclass{article}
+
+\usepackage[normalem]{ulem}
+\usepackage{fancyhdr}
+\usepackage[parfill]{parskip}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{multicol}
+\usepackage[version=3]{mhchem}
+\usepackage{SIunits}
+\usepackage{lscape}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{bookmark}
+\makeatletter
+\renewcommand\@seccntformat[1]{}
+\makeatother
+
+\pagestyle{fancyplain}
+
+\pgfplotsset{compat=1.7}
+
+\title{16 - Diagnostic methods in medicine}
+\author{Todd Davies}
+\date{\today}
+
+\begin{document}
+
+\rhead{16 - Diagnostic methods in medicine}
+\lhead{\today}
+
+\maketitle
+
+\section{Radioisotopes}
+
+Radioactive isotopes of elements can be inserted into compounds that can be
+ingested by/injected into a patient. This places a source of radiation inside
+the patient, meaning that radiation will emerge from inside the body to produce
+an image.
+
+\subsection{Choosing a radionuclide}
+
+There are a lot of different isotopes that emit radiation, but different
+isotopes have different properties, meaning that they may be more or less
+suitable for medical use.
+
+First of all, the isotope used should emit only gamma rays. This ensures that
+the radiation will penetrate the body so it can be detected by the detector (as
+opposed to alpha or beta radiation). Gamma rays are also the least ionising of
+the three types of radiation, which reduces the risk of cancer to the patient.
+
+The half life of the isotope should have a fairly short half life so that it
+will give out it's radiation quickly and it won't remain in the patient for a
+long time (ensuring the patient and their environment isn't exposed to more
+radiation than nececarry).
+
+\subsubsection{Storing isotopes with short half lives}
+
+How would a hospital be able to store isotopes with short half lives? They would
+have to have shipments of the isotope every day or so in order to keep some
+always in stock.
+
+The most common solution to this problem is for the hospital to store a
+radioactive isotope with a long half life that will decay into the desired
+isotope with a short half life.
+
+An example of this is that of $technetium-99m$:
+
+\[
+	\begin{split}
+		^{99}_{42}Mo &\rightarrow ^{99}_{43}Tc^{m} + ^{\phantom{-}0}_{-1}e + \bar{\nu}\\
+		^{99}_{43}Tc &\rightarrow ^{99}_{43}Tc + \gamma
+	\end{split}
+\]
+
+The hospital will store some molybdenum which wil continually decay into
+$^{99}_{43}Tc^{m}$. The 'm' indicates that the isotope is metastable, meaning
+that it will release a gamma ray at some point. This element has a half life of
+six hours, and when some needs to be used on a patient, it can be extracted from
+the molybdenum and used.
+
+\subsection{Radiopharmaceuticals}
+
+In order to ensure that the radioactive isotope reaches the correct organ, it
+must be formulated into a radiopharmaceutical. This means that it is chemically
+combined with a substance that will be taken up by that organ.
+Radiopharmaceuticals are sometimes called {\bf tracers} since they are designed
+to targed particular areas of the body.
+
+\section{The gamma camera}
+
+A gamma camera is able to detect $\gamma$-rays from sources such as technetium-
+99m.
+
+Inside the camera is a collimator which consists of a honycomb of cylindrical
+tubes, which stops photons with a horizontal component from entering any further
+into the gamma camera.
+
+Then, the gamma photons hit a large crystal called a scintillator, which acts to
+convert one gamma photon into many visible photons.\marginpar{\raggedright This
+works since gamma rays have a far higher energy than photons of visible light.}
+
+\end{document}
